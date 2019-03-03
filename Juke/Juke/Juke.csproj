@@ -46,32 +46,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asignacion.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Compra.cs" />
-    <Compile Include="Datos_Personales.cs" />
-    <Compile Include="Departamento.cs" />
-    <Compile Include="Det_Compra.cs" />
-    <Compile Include="Det_Tarea.cs" />
-    <Compile Include="Det_Venta.cs" />
-    <Compile Include="Empleado.cs" />
+    <Compile Include="Controller\AsignacionController.cs" />
+    <Compile Include="Controller\ClienteController.cs" />
+    <Compile Include="Controller\CompraController.cs" />
+    <Compile Include="Controller\Datos_PersonalesController.cs" />
+    <Compile Include="Controller\DepartamentoController.cs" />
+    <Compile Include="Controller\Det_CompraController.cs" />
+    <Compile Include="Controller\Det_TareaController.cs" />
+    <Compile Include="Controller\Det_VentaController.cs" />
+    <Compile Include="Controller\EmpleadoController.cs" />
+    <Compile Include="Controller\GastosController.cs" />
+    <Compile Include="Controller\MaterialController.cs" />
+    <Compile Include="Controller\NominaController.cs" />
+    <Compile Include="Controller\PerfilController.cs" />
+    <Compile Include="Controller\ProveedorController.cs" />
+    <Compile Include="Controller\SucursalController.cs" />
+    <Compile Include="Controller\TareaController.cs" />
+    <Compile Include="Controller\UsuarioController.cs" />
+    <Compile Include="Controller\VentaController.cs" />
+    <Compile Include="Model\Asignacion.cs" />
+    <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Compra.cs" />
+    <Compile Include="Model\Datos_Personales.cs" />
+    <Compile Include="Model\Departamento.cs" />
+    <Compile Include="Model\Det_Compra.cs" />
+    <Compile Include="Model\Det_Tarea.cs" />
+    <Compile Include="Model\Det_Venta.cs" />
+    <Compile Include="Model\Empleado.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gastos.cs" />
-    <Compile Include="Material.cs" />
-    <Compile Include="Nomina.cs" />
-    <Compile Include="Perfil.cs" />
+    <Compile Include="Model\Gastos.cs" />
+    <Compile Include="Model\Material.cs" />
+    <Compile Include="Model\Nomina.cs" />
+    <Compile Include="Model\Perfil.cs" />
+    <Compile Include="Model\UsuarioClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor.cs" />
-    <Compile Include="Sucursal.cs" />
-    <Compile Include="Tarea.cs" />
-    <Compile Include="Usuario.cs" />
-    <Compile Include="Venta.cs" />
+    <Compile Include="Model\Proveedor.cs" />
+    <Compile Include="Model\Sucursal.cs" />
+    <Compile Include="Model\Tarea.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Model\Venta.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -94,5 +113,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juke
+namespace Juke.Model
 {
-    class Tarea
+    class UsuarioClass
     {
     }
 }

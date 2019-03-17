@@ -91,6 +91,12 @@
     <Compile Include="Model\Tarea.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Model\Venta.cs" />
+    <Compile Include="Vistas\Captura_Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Captura_Nomina.Designer.cs">
+      <DependentUpon>Captura_Nomina.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,6 +106,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\Captura_Nomina.resx">
+      <DependentUpon>Captura_Nomina.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

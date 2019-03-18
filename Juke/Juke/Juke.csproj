@@ -91,6 +91,12 @@
     <Compile Include="Model\Tarea.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Model\Venta.cs" />
+    <Compile Include="Vistas\Ajustar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ajustar_Inventario.Designer.cs">
+      <DependentUpon>Ajustar_Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Captura_Nomina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,18 @@
     <Compile Include="Vistas\Detalle_Venta.Designer.cs">
       <DependentUpon>Detalle_Venta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Material.Designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Venta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +148,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\Ajustar_Inventario.resx">
+      <DependentUpon>Ajustar_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Captura_Nomina.resx">
       <DependentUpon>Captura_Nomina.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Detalle_Venta.resx">
       <DependentUpon>Detalle_Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Material.resx">
+      <DependentUpon>Material.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>

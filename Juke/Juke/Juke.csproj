@@ -91,54 +91,6 @@
     <Compile Include="Model\Tarea.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Model\Venta.cs" />
-    <Compile Include="Vistas\Ajustar_Inventario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Ajustar_Inventario.Designer.cs">
-      <DependentUpon>Ajustar_Inventario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Captura_Nomina.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Captura_Nomina.Designer.cs">
-      <DependentUpon>Captura_Nomina.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Compra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Compra.Designer.cs">
-      <DependentUpon>Compra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Detalle_Compra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Detalle_Compra.Designer.cs">
-      <DependentUpon>Detalle_Compra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Detalle_Venta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Detalle_Venta.Designer.cs">
-      <DependentUpon>Detalle_Venta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Inventario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Inventario.Designer.cs">
-      <DependentUpon>Inventario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Material.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Material.Designer.cs">
-      <DependentUpon>Material.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Venta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Venta.Designer.cs">
-      <DependentUpon>Venta.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -148,30 +100,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\Ajustar_Inventario.resx">
-      <DependentUpon>Ajustar_Inventario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Captura_Nomina.resx">
-      <DependentUpon>Captura_Nomina.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Compra.resx">
-      <DependentUpon>Compra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Detalle_Compra.resx">
-      <DependentUpon>Detalle_Compra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Detalle_Venta.resx">
-      <DependentUpon>Detalle_Venta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Inventario.resx">
-      <DependentUpon>Inventario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Material.resx">
-      <DependentUpon>Material.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Venta.resx">
-      <DependentUpon>Venta.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

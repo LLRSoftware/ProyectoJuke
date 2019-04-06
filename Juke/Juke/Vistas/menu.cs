@@ -47,10 +47,5 @@ namespace menu
         {
             otra.Show();
         }
-
-        private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

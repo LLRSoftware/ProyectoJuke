@@ -10,7 +10,7 @@ namespace empleados.conexion
 {
     class conexiondb
     {
-        string cadena = "Data Source=WATCHEDXXLEONXX;Initial Catalog=JukeDB;Integrated Security=True";
+        string cadena = "Data Source=DESKTOP-G28IBSO;Initial Catalog=JukeDB;Integrated Security=True";
         public SqlConnection conectar = new SqlConnection();
 
         public conexiondb()

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Juke
+namespace empleados
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Juke
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login.Form1());
+            Application.Run(new login.Form1()); 
         }
     }
 }

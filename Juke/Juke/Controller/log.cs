@@ -18,13 +18,10 @@ namespace empleados.Controller
         public String login(String usuario, String password)
         {
             String estatus = "";
-
-            try
-            {
-                nueva.abrir();
-                String query = "select * from usuario where Nombre='" + usuario +"' and Contraseña='"+password+"';";
-                /*Validación*/          
-            
+            nueva.abrir();
+            String query = "select * from usuario where Nombre='" + usuario +"' and Contraseña='"+password+"';";
+            /*Validación*/          
+            try {
                 SqlCommand lector = new SqlCommand(query, nueva.conectar);
                 SqlDataReader conecc = lector.ExecuteReader();
                 while (conecc.Read()) {

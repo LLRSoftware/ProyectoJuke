@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Juke.Vistas
 {
-    public partial class Captura_Nomina : Form
+    public partial class DetalleVenta : Form
     {
-        public Captura_Nomina()
+        public DetalleVenta()
         {
             InitializeComponent();
         }

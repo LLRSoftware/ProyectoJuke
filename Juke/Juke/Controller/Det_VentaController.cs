@@ -8,5 +8,7 @@ namespace Juke.Controller
 {
     class Det_VentaController
     {
+        //Cualquier cosa 
     }
+
 }

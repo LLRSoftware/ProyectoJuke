@@ -8,5 +8,6 @@ namespace Juke.Controller
 {
     class CompraController
     {
+        //Cualquier cosa 
     }
 }

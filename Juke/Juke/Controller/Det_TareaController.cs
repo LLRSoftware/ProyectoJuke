@@ -8,5 +8,6 @@ namespace Juke.Controller
 {
     class Det_TareaController
     {
+        //Cualquier cosa 
     }
 }

@@ -8,6 +8,5 @@ namespace Juke.Controller
 {
     class DepartamentoController
     {
-
     }
 }

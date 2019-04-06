@@ -103,6 +103,12 @@
     <Compile Include="Model\Tarea.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Model\Venta.cs" />
+    <Compile Include="Vistas\Ajustar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ajustar_Inventario.Designer.cs">
+      <DependentUpon>Ajustar_Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Asignacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     </Compile>
     <Compile Include="Vistas\bajaEmpleado.designer.cs">
       <DependentUpon>bajaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Captura_Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Captura_Nomina.Designer.cs">
+      <DependentUpon>Captura_Nomina.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Clientes.cs">
       <SubType>Form</SubType>
@@ -168,6 +180,18 @@
     </Compile>
     <Compile Include="Vistas\Gastos.Designer.cs">
       <DependentUpon>Gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Material.Designer.cs">
+      <DependentUpon>Material.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\menu.cs">
       <SubType>Form</SubType>
@@ -226,6 +250,9 @@
     <EmbeddedResource Include="Vistas\bajaEmpleado.resx">
       <DependentUpon>bajaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\datosPersonal.resx">
       <DependentUpon>datosPersonal.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\nuevouser.resx">
       <DependentUpon>nuevouser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

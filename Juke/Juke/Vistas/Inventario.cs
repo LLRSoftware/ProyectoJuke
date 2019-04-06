@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Juke.Vistas
 {
-    public partial class Compra : Form
+    public partial class Inventario : Form
     {
-        public Compra()
+        public Inventario()
         {
             InitializeComponent();
-        }
-
-        private void Compra_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Búsqueda_de_personal
+﻿namespace Juke.EncontrarPersonal
 {
     partial class EncontrarPersonal
     {
@@ -101,6 +101,7 @@
             this.btn_EP_Nvo.TabIndex = 11;
             this.btn_EP_Nvo.Text = "Nuevo";
             this.btn_EP_Nvo.UseVisualStyleBackColor = true;
+            this.btn_EP_Nvo.Click += new System.EventHandler(this.btn_EP_Nvo_Click);
             // 
             // btn_EP_Bus
             // 

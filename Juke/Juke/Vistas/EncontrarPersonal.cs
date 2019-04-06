@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using empleados.Controller;
 
-namespace Búsqueda_de_personal
+namespace Juke.EncontrarPersonal
 {
     public partial class EncontrarPersonal : Form
     {
@@ -50,6 +50,11 @@ namespace Búsqueda_de_personal
         private void table_dts_emp_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             mod.Idd.Text = table_dts_emp.CurrentRow.Selected.ToString();
+        }
+
+        private void btn_EP_Nvo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

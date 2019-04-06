@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Juke.EncontrarPersonal;
+using Juke.Vistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +19,8 @@ namespace menu
         empleados.empleados nueva = new empleados.empleados();
         empleados.nuevouser nuevo = new empleados.nuevouser();
         empleados.modusuario cambio = new empleados.modusuario();
-        Búsqueda_de_personal.EncontrarPersonal otra = new Búsqueda_de_personal.EncontrarPersonal();
+        EncontrarPersonal otra = new EncontrarPersonal();
+        Venta venta = new Venta();
         public menu()
         {
             InitializeComponent();
@@ -46,6 +49,11 @@ namespace menu
         private void modificaciónDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             otra.Show();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

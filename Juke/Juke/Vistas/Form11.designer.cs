@@ -44,7 +44,7 @@
             this.label1.Location = new System.Drawing.Point(75, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 23);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 11;
             this.label1.Text = "Usuario";
             // 
             // label2
@@ -54,7 +54,7 @@
             this.label2.Location = new System.Drawing.Point(78, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 23);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 10;
             this.label2.Text = "Password";
             // 
             // txtUsuario
@@ -63,7 +63,7 @@
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(170, 22);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "Admin";
             // 
             // txtPassword
@@ -73,8 +73,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(170, 22);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "Admin";
+            this.txtPassword.TabIndex = 2;
             // 
             // Aceptar
             // 
@@ -84,7 +83,7 @@
             this.Aceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Aceptar.Name = "Aceptar";
             this.Aceptar.Size = new System.Drawing.Size(81, 37);
-            this.Aceptar.TabIndex = 4;
+            this.Aceptar.TabIndex = 3;
             this.Aceptar.Text = "Aceptar";
             this.Aceptar.UseVisualStyleBackColor = false;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
@@ -97,7 +96,7 @@
             this.Cerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(82, 37);
-            this.Cerrar.TabIndex = 5;
+            this.Cerrar.TabIndex = 4;
             this.Cerrar.Text = "Cerrar";
             this.Cerrar.UseVisualStyleBackColor = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);

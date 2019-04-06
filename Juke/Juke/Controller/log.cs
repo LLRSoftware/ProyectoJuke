@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using empleados.conexion;
+using Juke.conexion;
 using empleados.Model;
 
 

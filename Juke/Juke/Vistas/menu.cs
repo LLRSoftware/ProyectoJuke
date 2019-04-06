@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Juke.Model;
 
 
 
@@ -21,6 +22,9 @@ namespace menu
         empleados.modusuario cambio = new empleados.modusuario();
         EncontrarPersonal otra = new EncontrarPersonal();
         Venta venta = new Venta();
+        Ajustar_Inventario ajustar_Inventario = new Ajustar_Inventario();
+        Asignacion.Emp_Asg_Fij asignacion = new Asignacion.Emp_Asg_Fij(1);
+
 
         public menu()
         {
@@ -58,6 +62,36 @@ namespace menu
         }
 
         private void consultarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void realizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void realizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
 
         }

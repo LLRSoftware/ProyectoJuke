@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 /*Conexion a Base de datos*/
-namespace Juke.conexion
+namespace Juke.nueva
 {
     class conexiondb
     {

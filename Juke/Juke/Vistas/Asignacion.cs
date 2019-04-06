@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using WindowsFormsApp1;
 using empleados.Controller;
 
-namespace Asignación
+namespace Asignacion
 {
     public partial class Emp_Asg_Fij : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Asignación
+﻿namespace Asignacion
 {
     partial class Emp_Asg_Fij
     {

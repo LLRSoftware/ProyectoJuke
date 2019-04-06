@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Asignación;
+using Asignacion;
 using WindowsFormsApp1;
 using Datos_personales.Model; // Importar la clase Datos_Personales para mandar llamar los campos 
 using empleados.Controller;

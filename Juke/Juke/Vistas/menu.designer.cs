@@ -221,36 +221,42 @@
             this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
             this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
             this.consultarToolStripMenuItem1.Text = "Consultar";
+            this.consultarToolStripMenuItem1.Click += new System.EventHandler(this.consultarToolStripMenuItem1_Click);
             // 
             // realizarToolStripMenuItem
             // 
             this.realizarToolStripMenuItem.Name = "realizarToolStripMenuItem";
             this.realizarToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.realizarToolStripMenuItem.Text = "Realizar";
+            this.realizarToolStripMenuItem.Click += new System.EventHandler(this.realizarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem2
             // 
             this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
             this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(216, 28);
             this.consultarToolStripMenuItem2.Text = "Consultar";
+            this.consultarToolStripMenuItem2.Click += new System.EventHandler(this.consultarToolStripMenuItem2_Click);
             // 
             // realizarToolStripMenuItem1
             // 
             this.realizarToolStripMenuItem1.Name = "realizarToolStripMenuItem1";
             this.realizarToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
             this.realizarToolStripMenuItem1.Text = "Realizar";
+            this.realizarToolStripMenuItem1.Click += new System.EventHandler(this.realizarToolStripMenuItem1_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem3
             // 
             this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
             this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(216, 28);
             this.consultarToolStripMenuItem3.Text = "Consultar";
+            this.consultarToolStripMenuItem3.Click += new System.EventHandler(this.consultarToolStripMenuItem3_Click);
             // 
             // consultarToolStripMenuItem4
             // 

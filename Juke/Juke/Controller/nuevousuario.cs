@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using empleados.conexion;
+using Juke.conexion;
 
 namespace empleados.Controller
 {

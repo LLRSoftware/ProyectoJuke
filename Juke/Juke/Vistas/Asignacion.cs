@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Búsqueda_de_personal;
 using WindowsFormsApp1;
 using empleados.Controller;
 

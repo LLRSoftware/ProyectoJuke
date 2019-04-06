@@ -21,6 +21,7 @@ namespace menu
         empleados.modusuario cambio = new empleados.modusuario();
         EncontrarPersonal otra = new EncontrarPersonal();
         Venta venta = new Venta();
+
         public menu()
         {
             InitializeComponent();
@@ -52,6 +53,11 @@ namespace menu
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarToolStripMenuItem4_Click(object sender, EventArgs e)
         {
 
         }

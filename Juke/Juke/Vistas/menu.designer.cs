@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuInicial = new System.Windows.Forms.MenuStrip();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaDeEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificaciónDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,15 +56,16 @@
             this.consultarTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvTareasRecientes = new System.Windows.Forms.DataGridView();
             this.Cuerpo = new System.Windows.Forms.Panel();
-            this.menuStrip1.SuspendLayout();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuInicial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareasRecientes)).BeginInit();
             this.Cuerpo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuInicial
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuInicial.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuInicial.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.empleadosToolStripMenuItem,
             this.nominaToolStripMenuItem,
             this.usuariosToolStripMenuItem,
@@ -72,12 +73,13 @@
             this.comprasToolStripMenuItem,
             this.ventasToolStripMenuItem,
             this.inventariosToolStripMenuItem,
-            this.tareasToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(872, 31);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.tareasToolStripMenuItem,
+            this.reportesToolStripMenuItem});
+            this.menuInicial.Location = new System.Drawing.Point(0, 0);
+            this.menuInicial.Name = "menuInicial";
+            this.menuInicial.Size = new System.Drawing.Size(878, 31);
+            this.menuInicial.TabIndex = 0;
+            this.menuInicial.Text = "menuStrip1";
             // 
             // empleadosToolStripMenuItem
             // 
@@ -134,7 +136,7 @@
             // cancelaciónToolStripMenuItem
             // 
             this.cancelaciónToolStripMenuItem.Name = "cancelaciónToolStripMenuItem";
-            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
             this.cancelaciónToolStripMenuItem.Text = "Cancelación";
             this.cancelaciónToolStripMenuItem.Click += new System.EventHandler(this.cancelaciónToolStripMenuItem_Click);
             // 
@@ -296,21 +298,28 @@
             this.Cuerpo.Controls.Add(this.dgvTareasRecientes);
             this.Cuerpo.Location = new System.Drawing.Point(0, 34);
             this.Cuerpo.Name = "Cuerpo";
-            this.Cuerpo.Size = new System.Drawing.Size(872, 474);
+            this.Cuerpo.Size = new System.Drawing.Size(954, 474);
             this.Cuerpo.TabIndex = 2;
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
+            this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 512);
+            this.ClientSize = new System.Drawing.Size(878, 512);
             this.Controls.Add(this.Cuerpo);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menuInicial);
+            this.MainMenuStrip = this.menuInicial;
             this.Name = "menu";
             this.Text = "Menu";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuInicial.ResumeLayout(false);
+            this.menuInicial.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareasRecientes)).EndInit();
             this.Cuerpo.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -320,7 +329,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuInicial;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem altaDeEmpleadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificaciónDeEmpleadosToolStripMenuItem;
@@ -348,6 +357,7 @@
         private System.Windows.Forms.DataGridView dgvTareasRecientes;
         private System.Windows.Forms.ToolStripMenuItem consultarGastosToolStripMenuItem;
         private System.Windows.Forms.Panel Cuerpo;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
     }
 }
 

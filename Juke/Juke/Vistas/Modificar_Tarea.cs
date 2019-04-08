@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Juke.Vistas
 {
-    public partial class Captura_Nomina : Form
+    public partial class Modificar_Tarea : Form
     {
-        public Captura_Nomina()
+        public Modificar_Tarea()
         {
             InitializeComponent();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

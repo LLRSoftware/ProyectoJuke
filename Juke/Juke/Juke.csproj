@@ -201,12 +201,6 @@
     <Compile Include="Vistas\Inventario.Designer.cs">
       <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Inventarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Inventarios.Designer.cs">
-      <DependentUpon>Inventarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\Material.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +218,12 @@
     </Compile>
     <Compile Include="Vistas\ModDatosEmpleado.designer.cs">
       <DependentUpon>ModDatosEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar_Tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar_Tarea.Designer.cs">
+      <DependentUpon>Modificar_Tarea.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\modusuario.cs">
       <SubType>Form</SubType>
@@ -249,6 +249,12 @@
     <Compile Include="Vistas\Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Tareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Tareas.Designer.cs">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Venta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\Agregar_Tarea.resx">
+      <DependentUpon>Agregar_Tarea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Ajustar_Inventario.resx">
       <DependentUpon>Ajustar_Inventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +291,12 @@
     <EmbeddedResource Include="Vistas\datosPersonal.resx">
       <DependentUpon>datosPersonal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DetalleCompra.resx">
+      <DependentUpon>DetalleCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DetalleVenta.resx">
+      <DependentUpon>DetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\empleados.resx">
       <DependentUpon>empleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,8 +309,8 @@
     <EmbeddedResource Include="Vistas\Gastos.resx">
       <DependentUpon>Gastos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Inventarios.resx">
-      <DependentUpon>Inventarios.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Material.resx">
       <DependentUpon>Material.cs</DependentUpon>
@@ -311,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\nuevouser.resx">
       <DependentUpon>nuevouser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Tareas.resx">
+      <DependentUpon>Tareas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>

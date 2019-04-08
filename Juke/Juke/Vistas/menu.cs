@@ -28,7 +28,6 @@ namespace menu
         Venta venta = new Venta();
         Ajustar_Inventario ajustar_Inventario = new Ajustar_Inventario();
         Asignacion.Emp_Asg_Fij asignacion = new Asignacion.Emp_Asg_Fij(1);
-        Inventarios inventarios = new Inventarios();
         Captura_Nomina captura_Nomina = new Captura_Nomina();
         Clientes clientes = new Clientes();
         Compra compra = new Compra();
@@ -42,6 +41,7 @@ namespace menu
         Proveedores proveedores = new Proveedores();
         Agregar_Material agregar_Material = new Agregar_Material();
         Agregar_Tarea agregar_Tarea = new Agregar_Tarea();
+        Tareas tareas = new Tareas();
         
 
         public menu()
@@ -83,7 +83,7 @@ namespace menu
 
         private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            inventarios.Show();
+            material.Show();
         }
 
         private void realizarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -118,7 +118,7 @@ namespace menu
 
         private void consultarTareasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tareas.Show();
         }
 
         private void agregarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace menu
 
         private void consultarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            inventarios.Show();
+            material.Show();
         }
 
         private void consultarGastosToolStripMenuItem_Click_1(object sender, EventArgs e)

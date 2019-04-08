@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelAMaterial = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.Emp_Sexo = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -48,22 +48,22 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.PanelAMaterial.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PanelAMaterial
             // 
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.btnGuardarM);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-2, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(802, 452);
-            this.panel1.TabIndex = 8;
+            this.PanelAMaterial.Controls.Add(this.panel5);
+            this.PanelAMaterial.Controls.Add(this.btnGuardarM);
+            this.PanelAMaterial.Controls.Add(this.panel4);
+            this.PanelAMaterial.Controls.Add(this.panel2);
+            this.PanelAMaterial.Location = new System.Drawing.Point(-2, -1);
+            this.PanelAMaterial.Name = "PanelAMaterial";
+            this.PanelAMaterial.Size = new System.Drawing.Size(802, 452);
+            this.PanelAMaterial.TabIndex = 8;
             // 
             // panel5
             // 
@@ -249,10 +249,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PanelAMaterial);
             this.Name = "Material";
             this.Text = "Material";
-            this.panel1.ResumeLayout(false);
+            this.PanelAMaterial.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -264,7 +264,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelAMaterial;
         private System.Windows.Forms.Button btnGuardarM;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtPrecio;

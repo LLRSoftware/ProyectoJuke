@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtSueldo = new System.Windows.Forms.TextBox();
+            this.txtTipoGasto = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtISR = new System.Windows.Forms.TextBox();
+            this.txtAsistencia = new System.Windows.Forms.TextBox();
+            this.txtFondo_Ahorro = new System.Windows.Forms.TextBox();
+            this.txtPuntualidad = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.listEmpleados = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -55,10 +55,10 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.listEmpleados);
+            this.panel1.Controls.Add(this.txtSueldo);
+            this.panel1.Controls.Add(this.txtTipoGasto);
+            this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label5);
@@ -69,37 +69,33 @@
             this.panel1.Size = new System.Drawing.Size(797, 452);
             this.panel1.TabIndex = 0;
             // 
-            // textBox7
+            // txtSueldo
             // 
-            this.textBox7.Location = new System.Drawing.Point(124, 119);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 12;
+            this.txtSueldo.Location = new System.Drawing.Point(124, 119);
+            this.txtSueldo.Name = "txtSueldo";
+            this.txtSueldo.Size = new System.Drawing.Size(202, 22);
+            this.txtSueldo.TabIndex = 12;
             // 
-            // textBox6
+            // txtTipoGasto
             // 
-            this.textBox6.Location = new System.Drawing.Point(124, 89);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 11;
+            this.txtTipoGasto.Location = new System.Drawing.Point(124, 89);
+            this.txtTipoGasto.Name = "txtTipoGasto";
+            this.txtTipoGasto.ReadOnly = true;
+            this.txtTipoGasto.Size = new System.Drawing.Size(202, 22);
+            this.txtTipoGasto.TabIndex = 11;
+            this.txtTipoGasto.Text = "Nomina";
             // 
-            // textBox5
+            // btnGuardar
             // 
-            this.textBox5.Location = new System.Drawing.Point(124, 59);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 10;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(525, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 36);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Location = new System.Drawing.Point(671, 402);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(90, 36);
+            this.btnGuardar.TabIndex = 9;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel2
             // 
@@ -123,10 +119,10 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.txtISR);
+            this.panel4.Controls.Add(this.txtAsistencia);
+            this.panel4.Controls.Add(this.txtFondo_Ahorro);
+            this.panel4.Controls.Add(this.txtPuntualidad);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label9);
@@ -137,33 +133,33 @@
             this.panel4.Size = new System.Drawing.Size(609, 122);
             this.panel4.TabIndex = 5;
             // 
-            // textBox4
+            // txtISR
             // 
-            this.textBox4.Location = new System.Drawing.Point(399, 75);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 8;
+            this.txtISR.Location = new System.Drawing.Point(399, 75);
+            this.txtISR.Name = "txtISR";
+            this.txtISR.Size = new System.Drawing.Size(100, 22);
+            this.txtISR.TabIndex = 8;
             // 
-            // textBox3
+            // txtAsistencia
             // 
-            this.textBox3.Location = new System.Drawing.Point(399, 42);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 7;
+            this.txtAsistencia.Location = new System.Drawing.Point(399, 42);
+            this.txtAsistencia.Name = "txtAsistencia";
+            this.txtAsistencia.Size = new System.Drawing.Size(100, 22);
+            this.txtAsistencia.TabIndex = 7;
             // 
-            // textBox2
+            // txtFondo_Ahorro
             // 
-            this.textBox2.Location = new System.Drawing.Point(135, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 6;
+            this.txtFondo_Ahorro.Location = new System.Drawing.Point(135, 77);
+            this.txtFondo_Ahorro.Name = "txtFondo_Ahorro";
+            this.txtFondo_Ahorro.Size = new System.Drawing.Size(100, 22);
+            this.txtFondo_Ahorro.TabIndex = 6;
             // 
-            // textBox1
+            // txtPuntualidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtPuntualidad.Location = new System.Drawing.Point(135, 44);
+            this.txtPuntualidad.Name = "txtPuntualidad";
+            this.txtPuntualidad.Size = new System.Drawing.Size(100, 22);
+            this.txtPuntualidad.TabIndex = 5;
             // 
             // label11
             // 
@@ -238,6 +234,14 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Empleado";
             // 
+            // listEmpleados
+            // 
+            this.listEmpleados.FormattingEnabled = true;
+            this.listEmpleados.Location = new System.Drawing.Point(124, 61);
+            this.listEmpleados.Name = "listEmpleados";
+            this.listEmpleados.Size = new System.Drawing.Size(202, 24);
+            this.listEmpleados.TabIndex = 41;
+            // 
             // Captura_Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,7 +249,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "Captura_Nomina";
-            this.Text = "Captura_Nomina";
+            this.Text = "Captura Nomina";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -260,10 +264,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtISR;
+        private System.Windows.Forms.TextBox txtAsistencia;
+        private System.Windows.Forms.TextBox txtFondo_Ahorro;
+        private System.Windows.Forms.TextBox txtPuntualidad;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -274,10 +278,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-
+        private System.Windows.Forms.TextBox txtSueldo;
+        private System.Windows.Forms.TextBox txtTipoGasto;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.ComboBox listEmpleados;
     }
 }

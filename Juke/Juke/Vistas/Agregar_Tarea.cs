@@ -15,6 +15,19 @@ namespace Juke.Vistas
         public Agregar_Tarea()
         {
             InitializeComponent();
+            DateTime fecha = DateTime.Now;
+            lbLote.Text = fecha.ToString("yyyyMMdd-"+txtNombre.Text);
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            btnAgregar.Controls.Add(pMateriales);
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+        }
+
+        private void Agregar_Tarea_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -37,13 +37,9 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.pMateriales = new System.Windows.Forms.Panel();
-            this.Emp_Sexo = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.lbLote = new System.Windows.Forms.Label();
             this.agregarTarea.SuspendLayout();
-            this.pMateriales.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +92,6 @@
             // 
             this.agregarTarea.Controls.Add(this.lbLote);
             this.agregarTarea.Controls.Add(this.panel2);
-            this.agregarTarea.Controls.Add(this.pMateriales);
             this.agregarTarea.Controls.Add(this.btnAgregar);
             this.agregarTarea.Controls.Add(this.label4);
             this.agregarTarea.Location = new System.Drawing.Point(-1, 0);
@@ -115,9 +110,9 @@
             // 
             this.btnAgregar.Location = new System.Drawing.Point(463, 89);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(26, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(98, 23);
             this.btnAgregar.TabIndex = 6;
-            this.btnAgregar.Text = "+";
+            this.btnAgregar.Text = "Continuar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
@@ -128,23 +123,6 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(187, 94);
             this.txtDescripcion.TabIndex = 7;
-            // 
-            // pMateriales
-            // 
-            this.pMateriales.Controls.Add(this.label6);
-            this.pMateriales.Controls.Add(this.Emp_Sexo);
-            this.pMateriales.Location = new System.Drawing.Point(496, 89);
-            this.pMateriales.Name = "pMateriales";
-            this.pMateriales.Size = new System.Drawing.Size(334, 86);
-            this.pMateriales.TabIndex = 8;
-            // 
-            // Emp_Sexo
-            // 
-            this.Emp_Sexo.FormattingEnabled = true;
-            this.Emp_Sexo.Location = new System.Drawing.Point(104, 24);
-            this.Emp_Sexo.Name = "Emp_Sexo";
-            this.Emp_Sexo.Size = new System.Drawing.Size(207, 24);
-            this.Emp_Sexo.TabIndex = 41;
             // 
             // panel2
             // 
@@ -158,15 +136,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(394, 349);
             this.panel2.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Material";
             // 
             // lbLote
             // 
@@ -187,8 +156,6 @@
             this.Load += new System.EventHandler(this.Agregar_Tarea_Load);
             this.agregarTarea.ResumeLayout(false);
             this.agregarTarea.PerformLayout();
-            this.pMateriales.ResumeLayout(false);
-            this.pMateriales.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -204,12 +171,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel agregarTarea;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Panel pMateriales;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox Emp_Sexo;
         private System.Windows.Forms.Label lbLote;
     }
 }

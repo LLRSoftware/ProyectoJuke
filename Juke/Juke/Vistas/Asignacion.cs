@@ -45,7 +45,7 @@ namespace Asignacion
             String mensaje = "";
             String accion = "";
             String msm = "";
-            String nomina = "";
+            //String nomina = "";
             String Estado = "";
             String depa = "";
 

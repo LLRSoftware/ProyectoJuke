@@ -12,11 +12,14 @@ using System.Windows.Forms;
 using Juke.Model;
 using System.Data.SqlClient;
 using Juke.nueva;
+using Juke.Controller;
 
 namespace menu
 {
     public partial class menu : Form
     {
+        String script= "SELECT * FROM Tarea ORDER BY Lote DESC";
+        Grids grids;
         conexiondb conexiondb = new conexiondb();
         empleados.empleados nueva = new empleados.empleados();
         empleados.nuevouser nuevo = new empleados.nuevouser();
@@ -39,50 +42,25 @@ namespace menu
         Proveedores proveedores = new Proveedores();
         Agregar_Material agregar_Material = new Agregar_Material();
         Agregar_Tarea agregar_Tarea = new Agregar_Tarea();
+        
 
         public menu()
         {
             InitializeComponent();
-            LlenarView(dgvTareasRecientes);
+            grids = new Grids(dgvTareasRecientes, conexiondb, script);
         }
-
-        public void LlenarView(DataGridView dgv)
-        {
-            try
-            {
-
-                //Establecer la conexión al servidor dentro del entorno
-                SqlCommand connection = new SqlCommand();
-
-                //Conexión abierta para su manejo
-                conexiondb.abrir();
-
-                //Comando SQL para solicitar información a la base de datos
-                SqlCommand command = new SqlCommand("SELECT * FROM Tarea ORDER BY Lote DESC", conexiondb.conectar);
-
-                //Adapter que toma los datos obtenidos para almacenarlos en un arreglo de tipo DataTable
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable data = new DataTable();
-                adapter.Fill(data);
-                dgv.DataSource = data;
-
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Error " + e);
-            }
-        }
-        private void modificaciónUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            cambio.Show();
-        }
-
+        
         private void altaDeEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             nueva.Show();
         }
 
-        private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void modificaciónDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            otra.Show();
+        }
+
+        private void bajaDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -92,17 +70,13 @@ namespace menu
             nuevo.Show();
         }
 
-        private void modificaciónDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void modificaciónUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            otra.Show();
+            //Cuerpo.Hide()
+            cambio.Show();
         }
 
-        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarToolStripMenuItem4_Click(object sender, EventArgs e)
+        private void bajaUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -112,29 +86,14 @@ namespace menu
             inventarios.Show();
         }
 
-        private void realizarToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void realizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             compra.Show();
         }
 
-        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void consultarComprasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            compra.Show();
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -147,19 +106,9 @@ namespace menu
             asignacion.Show();
         }
 
-        private void consultarGastosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cancelaciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void consultarComprasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //cMaterial.Show();
         }
 
         private void agregarTareaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -167,9 +116,35 @@ namespace menu
             agregar_Tarea.Show();
         }
 
+        private void consultarTareasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void agregarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             material.Show();
         }
+
+        private void consultarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inventarios.Show();
+        }
+
+        private void consultarGastosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            gastos.Show();
+        }
+
+        private void realizarVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            venta.Show();
+        }
+        
     }
 }

@@ -18,7 +18,7 @@ namespace Juke.Controller
             String mensaje = "";
             try
             { /*Insert*/
-                String sql = "insert into Asignacion(Escolaridad, Ubicacion, Categoria, Plaza, Vacante, Supervisor, Estado, Tipo_nomina, Puesto, Id_Departamento, Id_Empleado) " +
+                String sql = "insert into Venta () " +
                      "values('" + escolaridad + "','" + Ubicacion + "','" + Categoria + "','" + Plaza + "','" + vacante + "','" + Supervisor + "','" + Estado + "','" + Nomina + "','" + Puesto + "'," + departamento + "," + Empleado + ");";
                 /*Ejecucuón del Insert*/
                 SqlCommand ejecuta = new SqlCommand(sql, conexion.conectar);
@@ -75,7 +75,7 @@ namespace Juke.Controller
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
 
         }
@@ -86,8 +86,8 @@ namespace Juke.Controller
             bc.Items.Add("Secundaria");
             bc.Items.Add("Preparatoria");
             bc.Items.Add("Universidad/Licenciatura");
-            bc.Items.Add("Maestria");
-            bc.Items.Add("Doctorado");
+            bc.Items.Add("Ninguno");
+            bc.Items.Add("Tecnico");
             bc.SelectedIndex = 0;
         }
 

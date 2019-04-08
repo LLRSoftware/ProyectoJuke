@@ -74,7 +74,6 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(170, 22);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "Admin";
             // 
             // Aceptar
             // 

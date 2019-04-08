@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +62,7 @@
     <Compile Include="Controller\empleado.cs" />
     <Compile Include="Controller\EmpleadoController.cs" />
     <Compile Include="Controller\GastosController.cs" />
+    <Compile Include="Controller\Grids.cs" />
     <Compile Include="Controller\log.cs" />
     <Compile Include="Controller\MaterialController.cs" />
     <Compile Include="Controller\modificarPersona.cs" />
@@ -289,8 +291,14 @@
     <EmbeddedResource Include="Vistas\Form11.resx">
       <DependentUpon>Form11.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Gastos.resx">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Inventarios.resx">
       <DependentUpon>Inventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Material.resx">
+      <DependentUpon>Material.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>

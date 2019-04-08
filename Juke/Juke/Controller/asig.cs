@@ -71,6 +71,7 @@ namespace empleados.Controller
             }catch(Exception ex)
             {
 
+                MessageBox.Show(ex.ToString());
             }
 
         }

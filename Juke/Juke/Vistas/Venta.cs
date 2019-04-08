@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Juke.Controller;
+using Juke.nueva;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,19 @@ namespace Juke.Vistas
 {
     public partial class Venta : Form
     {
+        String script = "SELECT * FROM venta";
+        conexiondb conexiondb = new conexiondb();
+        Grids grids;
+
         public Venta()
         {
             InitializeComponent();
+            grids = new Grids(dgvVentas, conexiondb, script);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

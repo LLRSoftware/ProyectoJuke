@@ -9,46 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Juke.nueva;
+using Juke.Controller;
 
 namespace Juke.Vistas
 {
     public partial class Inventarios : Form
     {
-
+        String script = "SELECT Nombre, Marca, Cantidad FROM material";
         conexiondb conexiondb = new conexiondb();
+        Grids grids;
 
         public Inventarios()
         {
             InitializeComponent();
-
-            LlenarView(dgvInventario);
-        }
-
-        public void LlenarView(DataGridView dgv)
-        {
-            try
-            {
-                
-                //Establecer la conexión al servidor dentro del entorno
-                SqlCommand connection = new SqlCommand();
-
-                //Conexión abierta para su manejo
-                conexiondb.abrir();
-
-                //Comando SQL para solicitar información a la base de datos
-                SqlCommand command = new SqlCommand("SELECT * FROM Material", conexiondb.conectar);
-
-                //Adapter que toma los datos obtenidos para almacenarlos en un arreglo de tipo DataTable
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable data = new DataTable();
-                adapter.Fill(data);
-                dgv.DataSource = data;
-
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Error " + e);
-            }
+            grids = new Grids(dgvInventario, conexiondb,script);
         }
 
 

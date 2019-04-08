@@ -124,6 +124,7 @@ namespace empleados.Controller
                                 }
                                 catch (Exception ex) {
 
+                                    MessageBox.Show(ex.ToString());
                                 }
                                 if (val1 == numeros[x])
                                 {

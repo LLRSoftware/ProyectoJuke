@@ -377,6 +377,7 @@
             this.btn_Emp_Sel.TabIndex = 39;
             this.btn_Emp_Sel.Text = "Seleccionar";
             this.btn_Emp_Sel.UseVisualStyleBackColor = false;
+            this.btn_Emp_Sel.Click += new System.EventHandler(this.btn_Emp_Sel_Click);
             // 
             // Emp_Sexo
             // 

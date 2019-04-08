@@ -122,6 +122,11 @@ namespace empleados
             inser.llenaSexo(Emp_Sexo);
             inser.llenaEdoCivil(Emp_EdoCivil);
         }
+
+        private void btn_Emp_Sel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

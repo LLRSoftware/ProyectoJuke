@@ -26,7 +26,7 @@ namespace Juke
         private String EstadoNac;
         private String Civil;
 
-        public Emple()
+        public Empleado()
         {
             Id_empleado = this.Id_empleado1;
             Nombre = this.Nombre1;

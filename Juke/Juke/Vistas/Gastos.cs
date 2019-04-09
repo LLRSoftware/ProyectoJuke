@@ -19,7 +19,7 @@ namespace Juke.Vistas
         conexiondb conexiondb = new conexiondb();
         Grids grids;
         Nomina nomina = new Nomina();
-        Compra compra = new Compra();
+        Agregar_Compra agregar_compra = new Agregar_Compra();
 
         public Gastos()
         {
@@ -40,7 +40,7 @@ namespace Juke.Vistas
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
-            compra.Show();
+            agregar_compra.Show();
         }
     }
 }

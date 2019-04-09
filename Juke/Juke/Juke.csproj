@@ -105,6 +105,12 @@
     <Compile Include="Model\Tarea.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Model\Venta.cs" />
+    <Compile Include="Vistas\Agregar_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Agregar_Compra.Designer.cs">
+      <DependentUpon>Agregar_Compra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Agregar_Material.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     </Compile>
     <Compile Include="Vistas\Agregar_Tarea.Designer.cs">
       <DependentUpon>Agregar_Tarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Agregar_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Agregar_Venta.Designer.cs">
+      <DependentUpon>Agregar_Venta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Ajustar_Inventario.cs">
       <SubType>Form</SubType>
@@ -276,6 +288,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\Agregar_Material.resx">
+      <DependentUpon>Agregar_Material.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Agregar_Tarea.resx">
       <DependentUpon>Agregar_Tarea.cs</DependentUpon>
     </EmbeddedResource>

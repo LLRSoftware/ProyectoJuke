@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCVenta = new System.Windows.Forms.Panel();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -48,23 +48,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panelCVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelCVenta
             // 
-            this.panel1.Controls.Add(this.dgvVentas);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 452);
-            this.panel1.TabIndex = 6;
+            this.panelCVenta.Controls.Add(this.dgvVentas);
+            this.panelCVenta.Controls.Add(this.button1);
+            this.panelCVenta.Controls.Add(this.panel4);
+            this.panelCVenta.Controls.Add(this.label3);
+            this.panelCVenta.Controls.Add(this.panel2);
+            this.panelCVenta.Location = new System.Drawing.Point(-1, -1);
+            this.panelCVenta.Name = "panelCVenta";
+            this.panelCVenta.Size = new System.Drawing.Size(804, 452);
+            this.panelCVenta.TabIndex = 6;
             // 
             // dgvVentas
             // 
@@ -248,11 +248,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCVenta);
             this.Name = "Venta";
             this.Text = "Venta";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelCVenta.ResumeLayout(false);
+            this.panelCVenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -263,7 +263,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelCVenta;
         private System.Windows.Forms.DataGridView dgvVentas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;

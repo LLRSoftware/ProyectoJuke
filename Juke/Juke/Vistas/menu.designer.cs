@@ -54,9 +54,9 @@
             this.tareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarTareaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvTareasRecientes = new System.Windows.Forms.DataGridView();
             this.Cuerpo = new System.Windows.Forms.Panel();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuInicial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareasRecientes)).BeginInit();
             this.Cuerpo.SuspendLayout();
@@ -129,14 +129,14 @@
             // altaToolStripMenuItem
             // 
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
             // cancelaciónToolStripMenuItem
             // 
             this.cancelaciónToolStripMenuItem.Name = "cancelaciónToolStripMenuItem";
-            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
+            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.cancelaciónToolStripMenuItem.Text = "Cancelación";
             this.cancelaciónToolStripMenuItem.Click += new System.EventHandler(this.cancelaciónToolStripMenuItem_Click);
             // 
@@ -202,7 +202,7 @@
             // 
             this.realizarToolStripMenuItem.Name = "realizarToolStripMenuItem";
             this.realizarToolStripMenuItem.Size = new System.Drawing.Size(239, 28);
-            this.realizarToolStripMenuItem.Text = "Realizar";
+            this.realizarToolStripMenuItem.Text = "Realizar Compra";
             this.realizarToolStripMenuItem.Click += new System.EventHandler(this.realizarToolStripMenuItem_Click);
             // 
             // consultarComprasToolStripMenuItem
@@ -284,6 +284,13 @@
             this.consultarTareasToolStripMenuItem.Text = "Consultar Tareas";
             this.consultarTareasToolStripMenuItem.Click += new System.EventHandler(this.consultarTareasToolStripMenuItem_Click);
             // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
             // dgvTareasRecientes
             // 
             this.dgvTareasRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -300,13 +307,6 @@
             this.Cuerpo.Name = "Cuerpo";
             this.Cuerpo.Size = new System.Drawing.Size(954, 474);
             this.Cuerpo.TabIndex = 2;
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(95, 27);
-            this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // menu
             // 

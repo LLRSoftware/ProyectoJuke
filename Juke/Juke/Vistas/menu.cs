@@ -21,7 +21,7 @@ namespace menu
         String script= "SELECT * FROM Tarea ORDER BY Lote DESC";
         Grids grids;
         conexiondb conexiondb = new conexiondb();
-        empleados.empleados nueva = new empleados.empleados();
+        empleados.empleados empleados = new empleados.empleados();
         empleados.nuevouser nuevo = new empleados.nuevouser();
         empleados.modusuario cambio = new empleados.modusuario();
         EncontrarPersonal otra = new EncontrarPersonal();
@@ -30,6 +30,7 @@ namespace menu
         Asignacion.Emp_Asg_Fij asignacion = new Asignacion.Emp_Asg_Fij(1);
         Captura_Nomina captura_Nomina = new Captura_Nomina();
         Clientes clientes = new Clientes();
+        Agregar_Compra agregar_compra = new Agregar_Compra();
         Compra compra = new Compra();
         DetalleCompra detalleCompra = new DetalleCompra();
         DetalleVenta detalleVenta = new DetalleVenta();
@@ -52,7 +53,7 @@ namespace menu
         
         private void altaDeEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            nueva.Show();
+            empleados.Show();
         }
 
         private void modificaciónDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,7 +89,7 @@ namespace menu
 
         private void realizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            compra.Show();
+            agregar_compra.Show();
         }
 
         private void consultarComprasToolStripMenuItem_Click(object sender, EventArgs e)

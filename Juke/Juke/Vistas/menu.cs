@@ -35,9 +35,10 @@ namespace menu
         DetalleCompra detalleCompra = new DetalleCompra();
         DetalleVenta detalleVenta = new DetalleVenta();
         Gastos gastos = new Gastos();
-        Material material = new Material();
+        Agregar_Material agregar_material = new Agregar_Material();
+
         Inventario inventario = new Inventario();
-        Material aMaterial = new Material();
+        Material material = new Material();
         Nomina nomina = new Nomina();
         Proveedores proveedores = new Proveedores();
         Agregar_Material agregar_Material = new Agregar_Material();
@@ -124,7 +125,7 @@ namespace menu
 
         private void agregarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            material.Show();
+            agregar_material.Show();
         }
 
         private void consultarMaterialToolStripMenuItem_Click(object sender, EventArgs e)

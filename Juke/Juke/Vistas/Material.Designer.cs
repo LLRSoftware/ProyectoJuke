@@ -252,6 +252,7 @@
             this.Controls.Add(this.PanelAMaterial);
             this.Name = "Material";
             this.Text = "Material";
+            this.Load += new System.EventHandler(this.Material_Load);
             this.PanelAMaterial.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

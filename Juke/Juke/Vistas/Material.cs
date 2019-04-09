@@ -94,6 +94,11 @@ namespace Juke.Vistas
             conexion.cerrar();
         }
 
+        private void Material_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         //public void guardar()

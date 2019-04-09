@@ -288,11 +288,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\agregar_compra.resx">
+      <DependentUpon>Agregar_Compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Agregar_Material.resx">
       <DependentUpon>Agregar_Material.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Agregar_Tarea.resx">
       <DependentUpon>Agregar_Tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Agregar_Venta.resx">
+      <DependentUpon>Agregar_Venta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Ajustar_Inventario.resx">
       <DependentUpon>Ajustar_Inventario.cs</DependentUpon>

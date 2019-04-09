@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ListaMaterial = new System.Windows.Forms.ComboBox();
+            this.btnAgregarCompra = new System.Windows.Forms.Button();
+            this.btnCancelarCompra = new System.Windows.Forms.Button();
+            this.btnTerminarCompra = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,13 +57,15 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.ListaMaterial);
+            this.panel1.Controls.Add(this.btnAgregarCompra);
+            this.panel1.Controls.Add(this.btnCancelarCompra);
+            this.panel1.Controls.Add(this.btnTerminarCompra);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.textBox8);
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label19);
@@ -73,8 +77,43 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 452);
+            this.panel1.Size = new System.Drawing.Size(669, 476);
             this.panel1.TabIndex = 9;
+            // 
+            // ListaMaterial
+            // 
+            this.ListaMaterial.FormattingEnabled = true;
+            this.ListaMaterial.Location = new System.Drawing.Point(148, 87);
+            this.ListaMaterial.Name = "ListaMaterial";
+            this.ListaMaterial.Size = new System.Drawing.Size(224, 24);
+            this.ListaMaterial.TabIndex = 41;
+            // 
+            // btnAgregarCompra
+            // 
+            this.btnAgregarCompra.Location = new System.Drawing.Point(240, 420);
+            this.btnAgregarCompra.Name = "btnAgregarCompra";
+            this.btnAgregarCompra.Size = new System.Drawing.Size(132, 36);
+            this.btnAgregarCompra.TabIndex = 27;
+            this.btnAgregarCompra.Text = "Agregar compra";
+            this.btnAgregarCompra.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelarCompra
+            // 
+            this.btnCancelarCompra.Location = new System.Drawing.Point(489, 420);
+            this.btnCancelarCompra.Name = "btnCancelarCompra";
+            this.btnCancelarCompra.Size = new System.Drawing.Size(132, 36);
+            this.btnCancelarCompra.TabIndex = 26;
+            this.btnCancelarCompra.Text = "Cancelar compra";
+            this.btnCancelarCompra.UseVisualStyleBackColor = true;
+            // 
+            // btnTerminarCompra
+            // 
+            this.btnTerminarCompra.Location = new System.Drawing.Point(20, 420);
+            this.btnTerminarCompra.Name = "btnTerminarCompra";
+            this.btnTerminarCompra.Size = new System.Drawing.Size(132, 36);
+            this.btnTerminarCompra.TabIndex = 25;
+            this.btnTerminarCompra.Text = "Terminar compra";
+            this.btnTerminarCompra.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -91,17 +130,6 @@
             this.label8.Size = new System.Drawing.Size(55, 17);
             this.label8.TabIndex = 20;
             this.label8.Text = "Importe";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(672, 403);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 36);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // textBox8
             // 
@@ -124,13 +152,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(224, 22);
             this.textBox6.TabIndex = 16;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(148, 94);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(224, 22);
-            this.textBox7.TabIndex = 15;
             // 
             // textBox4
             // 
@@ -172,7 +193,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Enabled = false;
-            this.label18.Location = new System.Drawing.Point(17, 183);
+            this.label18.Location = new System.Drawing.Point(15, 183);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(82, 17);
             this.label18.TabIndex = 7;
@@ -245,10 +266,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(669, 475);
             this.Controls.Add(this.panel1);
             this.Name = "DetalleCompra";
             this.Text = "Detalle_Compra";
+            this.Load += new System.EventHandler(this.DetalleCompra_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -263,11 +285,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
@@ -280,6 +300,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-
+        private System.Windows.Forms.Button btnAgregarCompra;
+        private System.Windows.Forms.Button btnCancelarCompra;
+        private System.Windows.Forms.Button btnTerminarCompra;
+        private System.Windows.Forms.ComboBox ListaMaterial;
     }
 }

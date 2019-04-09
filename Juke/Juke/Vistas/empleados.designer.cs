@@ -386,6 +386,7 @@
             this.Emp_Sexo.Name = "Emp_Sexo";
             this.Emp_Sexo.Size = new System.Drawing.Size(327, 24);
             this.Emp_Sexo.TabIndex = 40;
+            this.Emp_Sexo.SelectedIndexChanged += new System.EventHandler(this.Emp_Sexo_SelectedIndexChanged);
             // 
             // Emp_FecNac
             // 

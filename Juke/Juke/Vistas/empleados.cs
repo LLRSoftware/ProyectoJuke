@@ -127,6 +127,11 @@ namespace empleados
         {
 
         }
+
+        private void Emp_Sexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

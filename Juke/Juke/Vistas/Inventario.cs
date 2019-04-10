@@ -24,7 +24,7 @@ namespace Juke.Vistas
             grids = new Grids(dgvInventario, conexiondb, script);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
 
         }

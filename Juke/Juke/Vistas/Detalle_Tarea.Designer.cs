@@ -33,11 +33,13 @@
             this.Emp_Sexo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.pMateriales.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMateriales
             // 
+            this.pMateriales.Controls.Add(this.btnGuardar);
             this.pMateriales.Controls.Add(this.textBox1);
             this.pMateriales.Controls.Add(this.label1);
             this.pMateriales.Controls.Add(this.label6);
@@ -80,6 +82,16 @@
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 44;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(104, 131);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 45;
+            this.btnGuardar.Text = "Aceptar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // Detalle_Tarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -101,5 +113,6 @@
         private System.Windows.Forms.ComboBox Emp_Sexo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

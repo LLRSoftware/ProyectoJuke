@@ -29,14 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnRegresarBE = new System.Windows.Forms.Button();
+            this.btnCancelarBE = new System.Windows.Forms.Button();
             this.btn_BE_Guardar = new System.Windows.Forms.Button();
-            this.Emp_BE_Cve = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.Emp_BE_Fec = new System.Windows.Forms.DateTimePicker();
-            this.Emp_BE_Nom = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,16 +50,19 @@
             this.Emp_BE_FecFin = new System.Windows.Forms.DateTimePicker();
             this.Emp_BE_FecIni = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCancelarC = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ListaEmpleado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateGray;
-            this.panel1.Controls.Add(this.btnCancelarC);
+            this.panel1.Controls.Add(this.btnRegresarBE);
+            this.panel1.Controls.Add(this.btnCancelarBE);
             this.panel1.Controls.Add(this.btn_BE_Guardar);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -71,33 +71,51 @@
             this.panel1.Size = new System.Drawing.Size(784, 538);
             this.panel1.TabIndex = 23;
             // 
-            // panel2
+            // btnRegresarBE
             // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(1, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(780, 48);
-            this.panel2.TabIndex = 43;
+            this.btnRegresarBE.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarBE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarBE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarBE.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarBE.Location = new System.Drawing.Point(364, 476);
+            this.btnRegresarBE.Name = "btnRegresarBE";
+            this.btnRegresarBE.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarBE.TabIndex = 66;
+            this.btnRegresarBE.Text = "Regresar";
+            this.btnRegresarBE.UseVisualStyleBackColor = false;
             // 
-            // label13
+            // btnCancelarBE
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.SystemColors.Window;
-            this.label13.Location = new System.Drawing.Point(8, 13);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(185, 25);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Baja de empleado";
+            this.btnCancelarBE.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCancelarBE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarBE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarBE.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarBE.Location = new System.Drawing.Point(523, 476);
+            this.btnCancelarBE.Name = "btnCancelarBE";
+            this.btnCancelarBE.Size = new System.Drawing.Size(90, 36);
+            this.btnCancelarBE.TabIndex = 65;
+            this.btnCancelarBE.Text = "Cancelar";
+            this.btnCancelarBE.UseVisualStyleBackColor = false;
+            // 
+            // btn_BE_Guardar
+            // 
+            this.btn_BE_Guardar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_BE_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_BE_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_BE_Guardar.ForeColor = System.Drawing.Color.White;
+            this.btn_BE_Guardar.Location = new System.Drawing.Point(678, 476);
+            this.btn_BE_Guardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_BE_Guardar.Name = "btn_BE_Guardar";
+            this.btn_BE_Guardar.Size = new System.Drawing.Size(90, 38);
+            this.btn_BE_Guardar.TabIndex = 63;
+            this.btn_BE_Guardar.Text = "Guardar";
+            this.btn_BE_Guardar.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.Emp_BE_Cve);
+            this.panel3.Controls.Add(this.ListaEmpleado);
             this.panel3.Controls.Add(this.Emp_BE_Fec);
-            this.panel3.Controls.Add(this.Emp_BE_Nom);
-            this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
@@ -120,28 +138,6 @@
             this.panel3.TabIndex = 44;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // btn_BE_Guardar
-            // 
-            this.btn_BE_Guardar.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_BE_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_BE_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_BE_Guardar.ForeColor = System.Drawing.Color.White;
-            this.btn_BE_Guardar.Location = new System.Drawing.Point(678, 476);
-            this.btn_BE_Guardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_BE_Guardar.Name = "btn_BE_Guardar";
-            this.btn_BE_Guardar.Size = new System.Drawing.Size(90, 38);
-            this.btn_BE_Guardar.TabIndex = 63;
-            this.btn_BE_Guardar.Text = "Guardar";
-            this.btn_BE_Guardar.UseVisualStyleBackColor = false;
-            // 
-            // Emp_BE_Cve
-            // 
-            this.Emp_BE_Cve.Location = new System.Drawing.Point(189, 343);
-            this.Emp_BE_Cve.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_Cve.Name = "Emp_BE_Cve";
-            this.Emp_BE_Cve.Size = new System.Drawing.Size(300, 27);
-            this.Emp_BE_Cve.TabIndex = 62;
-            // 
             // Emp_BE_Fec
             // 
             this.Emp_BE_Fec.Location = new System.Drawing.Point(189, 268);
@@ -149,24 +145,6 @@
             this.Emp_BE_Fec.Name = "Emp_BE_Fec";
             this.Emp_BE_Fec.Size = new System.Drawing.Size(300, 27);
             this.Emp_BE_Fec.TabIndex = 61;
-            // 
-            // Emp_BE_Nom
-            // 
-            this.Emp_BE_Nom.Location = new System.Drawing.Point(189, 308);
-            this.Emp_BE_Nom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_Nom.Name = "Emp_BE_Nom";
-            this.Emp_BE_Nom.Size = new System.Drawing.Size(300, 27);
-            this.Emp_BE_Nom.TabIndex = 60;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(18, 343);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 20);
-            this.label12.TabIndex = 59;
-            this.label12.Text = "Clave";
             // 
             // label11
             // 
@@ -317,18 +295,33 @@
             this.label2.TabIndex = 43;
             this.label2.Text = "Duración del servicio";
             // 
-            // btnCancelarC
+            // panel2
             // 
-            this.btnCancelarC.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCancelarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarC.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarC.Location = new System.Drawing.Point(509, 476);
-            this.btnCancelarC.Name = "btnCancelarC";
-            this.btnCancelarC.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarC.TabIndex = 65;
-            this.btnCancelarC.Text = "Cancelar";
-            this.btnCancelarC.UseVisualStyleBackColor = false;
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Location = new System.Drawing.Point(1, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(780, 48);
+            this.panel2.TabIndex = 43;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.SystemColors.Window;
+            this.label13.Location = new System.Drawing.Point(8, 13);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(185, 25);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Baja de empleado";
+            // 
+            // ListaEmpleado
+            // 
+            this.ListaEmpleado.FormattingEnabled = true;
+            this.ListaEmpleado.Location = new System.Drawing.Point(189, 308);
+            this.ListaEmpleado.Name = "ListaEmpleado";
+            this.ListaEmpleado.Size = new System.Drawing.Size(300, 28);
+            this.ListaEmpleado.TabIndex = 62;
             // 
             // bajaEmpleado
             // 
@@ -342,10 +335,10 @@
             this.Text = "Baja de empleado";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,10 +348,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_BE_Guardar;
-        private System.Windows.Forms.TextBox Emp_BE_Cve;
         private System.Windows.Forms.DateTimePicker Emp_BE_Fec;
-        private System.Windows.Forms.TextBox Emp_BE_Nom;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -377,7 +367,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnCancelarC;
+        private System.Windows.Forms.Button btnCancelarBE;
+        private System.Windows.Forms.Button btnRegresarBE;
+        private System.Windows.Forms.ComboBox ListaEmpleado;
     }
 }
 

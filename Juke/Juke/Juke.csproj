@@ -281,6 +281,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vistas\agregar_compra.resx">
       <DependentUpon>Agregar_Compra.cs</DependentUpon>
@@ -370,6 +371,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Maps.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maps2.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

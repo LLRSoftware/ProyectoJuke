@@ -291,10 +291,10 @@
             // dgvTareasRecientes
             // 
             this.dgvTareasRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTareasRecientes.Location = new System.Drawing.Point(12, 234);
+            this.dgvTareasRecientes.Location = new System.Drawing.Point(254, 234);
             this.dgvTareasRecientes.Name = "dgvTareasRecientes";
             this.dgvTareasRecientes.RowTemplate.Height = 24;
-            this.dgvTareasRecientes.Size = new System.Drawing.Size(847, 232);
+            this.dgvTareasRecientes.Size = new System.Drawing.Size(395, 232);
             this.dgvTareasRecientes.TabIndex = 1;
             // 
             // Cuerpo
@@ -302,7 +302,7 @@
             this.Cuerpo.Controls.Add(this.dgvTareasRecientes);
             this.Cuerpo.Location = new System.Drawing.Point(0, 34);
             this.Cuerpo.Name = "Cuerpo";
-            this.Cuerpo.Size = new System.Drawing.Size(954, 474);
+            this.Cuerpo.Size = new System.Drawing.Size(878, 474);
             this.Cuerpo.TabIndex = 2;
             // 
             // menu

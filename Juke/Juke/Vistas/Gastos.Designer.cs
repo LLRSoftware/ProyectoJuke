@@ -109,6 +109,7 @@
             this.btnCompra.TabIndex = 5;
             this.btnCompra.Text = "Agregar Compra";
             this.btnCompra.UseVisualStyleBackColor = false;
+            this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
             // 
             // btnNomina
             // 
@@ -122,6 +123,7 @@
             this.btnNomina.TabIndex = 4;
             this.btnNomina.Text = "Agregar Nómina";
             this.btnNomina.UseVisualStyleBackColor = false;
+            this.btnNomina.Click += new System.EventHandler(this.btnNomina_Click);
             // 
             // dgvGastos
             // 

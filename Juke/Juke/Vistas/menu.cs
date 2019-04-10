@@ -40,7 +40,6 @@ namespace menu
         Nomina nomina = new Nomina();
         Proveedores proveedores = new Proveedores();
         Agregar_Material agregar_Material = new Agregar_Material();
-        Consulta_Material consulta_material = new Consulta_Material();
         Agregar_Tarea agregar_Tarea = new Agregar_Tarea();
         Tareas tareas = new Tareas();
         Material material = new Material();

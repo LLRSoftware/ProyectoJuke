@@ -36,11 +36,13 @@ namespace Juke.Vistas
         private void btnNomina_Click(object sender, EventArgs e)
         {
             nomina.Show();
+            this.Hide();
         }
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
             agregar_compra.Show();
+            this.Hide();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)

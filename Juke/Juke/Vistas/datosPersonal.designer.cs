@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btn_DP_sig = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.ListaEmpleado = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Emp_DP_TelR = new System.Windows.Forms.TextBox();
@@ -48,24 +50,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btn_DP_sig = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.btnRegresarDP = new System.Windows.Forms.Button();
+            this.btnCancelarDP = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateGray;
+            this.panel1.Controls.Add(this.btnRegresarDP);
+            this.panel1.Controls.Add(this.btnCancelarDP);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.btn_DP_sig);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, -2);
@@ -73,25 +77,41 @@
             this.panel1.Size = new System.Drawing.Size(785, 538);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // label10
             // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(0, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(783, 48);
-            this.panel2.TabIndex = 60;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.Control;
+            this.label10.Location = new System.Drawing.Point(15, 296);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(193, 19);
+            this.label10.TabIndex = 82;
+            this.label10.Text = "Ubicación de la empresa";
             // 
-            // label7
+            // label17
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(8, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 25);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Datos personales";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label17.Location = new System.Drawing.Point(11, 303);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(764, 17);
+            this.label17.TabIndex = 81;
+            this.label17.Text = "_________________________________________________________________________________" +
+    "___";
+            // 
+            // btn_DP_sig
+            // 
+            this.btn_DP_sig.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_DP_sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DP_sig.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_DP_sig.ForeColor = System.Drawing.Color.White;
+            this.btn_DP_sig.Location = new System.Drawing.Point(680, 487);
+            this.btn_DP_sig.Name = "btn_DP_sig";
+            this.btn_DP_sig.Size = new System.Drawing.Size(90, 36);
+            this.btn_DP_sig.TabIndex = 80;
+            this.btn_DP_sig.Text = "Siguiente";
+            this.btn_DP_sig.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -118,19 +138,29 @@
             this.panel3.Size = new System.Drawing.Size(757, 213);
             this.panel3.TabIndex = 61;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 19);
+            this.label1.TabIndex = 80;
+            this.label1.Text = "Ingrese la información";
+            // 
             // ListaEmpleado
             // 
             this.ListaEmpleado.FormattingEnabled = true;
-            this.ListaEmpleado.Location = new System.Drawing.Point(441, 15);
+            this.ListaEmpleado.Location = new System.Drawing.Point(385, 15);
             this.ListaEmpleado.Name = "ListaEmpleado";
-            this.ListaEmpleado.Size = new System.Drawing.Size(289, 24);
+            this.ListaEmpleado.Size = new System.Drawing.Size(345, 24);
             this.ListaEmpleado.TabIndex = 79;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(297, 15);
+            this.label11.Location = new System.Drawing.Point(236, 15);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(116, 20);
             this.label11.TabIndex = 78;
@@ -257,60 +287,61 @@
             this.label2.TabIndex = 60;
             this.label2.Text = "Calle";
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 19);
-            this.label1.TabIndex = 80;
-            this.label1.Text = "Ingrese la información";
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(783, 48);
+            this.panel2.TabIndex = 60;
             // 
-            // label17
+            // label7
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label17.Location = new System.Drawing.Point(11, 303);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(764, 17);
-            this.label17.TabIndex = 81;
-            this.label17.Text = "_________________________________________________________________________________" +
-    "___";
-            // 
-            // btn_DP_sig
-            // 
-            this.btn_DP_sig.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_DP_sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DP_sig.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_DP_sig.ForeColor = System.Drawing.Color.White;
-            this.btn_DP_sig.Location = new System.Drawing.Point(680, 453);
-            this.btn_DP_sig.Name = "btn_DP_sig";
-            this.btn_DP_sig.Size = new System.Drawing.Size(90, 36);
-            this.btn_DP_sig.TabIndex = 80;
-            this.btn_DP_sig.Text = "Siguiente";
-            this.btn_DP_sig.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.Window;
+            this.label7.Location = new System.Drawing.Point(8, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(180, 25);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Datos personales";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 353);
+            this.pictureBox1.Image = global::Juke.Properties.Resources.Maps2;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 333);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(516, 136);
-            this.pictureBox1.TabIndex = 78;
+            this.pictureBox1.Size = new System.Drawing.Size(369, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
             // 
-            // label10
+            // btnRegresarDP
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(15, 296);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(193, 19);
-            this.label10.TabIndex = 82;
-            this.label10.Text = "Ubicación de la empresa";
+            this.btnRegresarDP.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarDP.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarDP.Location = new System.Drawing.Point(421, 487);
+            this.btnRegresarDP.Name = "btnRegresarDP";
+            this.btnRegresarDP.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarDP.TabIndex = 85;
+            this.btnRegresarDP.Text = "Regresar";
+            this.btnRegresarDP.UseVisualStyleBackColor = false;
+            // 
+            // btnCancelarDP
+            // 
+            this.btnCancelarDP.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCancelarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarDP.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarDP.Location = new System.Drawing.Point(551, 487);
+            this.btnCancelarDP.Name = "btnCancelarDP";
+            this.btnCancelarDP.Size = new System.Drawing.Size(90, 36);
+            this.btnCancelarDP.TabIndex = 84;
+            this.btnCancelarDP.Text = "Cancelar";
+            this.btnCancelarDP.UseVisualStyleBackColor = false;
             // 
             // datosPersonal
             // 
@@ -323,10 +354,10 @@
             this.Load += new System.EventHandler(this.datosPersonal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -359,6 +390,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btn_DP_sig;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRegresarDP;
+        private System.Windows.Forms.Button btnCancelarDP;
     }
 }
 

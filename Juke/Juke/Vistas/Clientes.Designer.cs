@@ -29,45 +29,60 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelarC = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCancelarM = new System.Windows.Forms.Button();
             this.btnGuardarC = new System.Windows.Forms.Button();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtIDCliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtRFC = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtFechaC = new System.Windows.Forms.TextBox();
+            this.txtTelefonoC = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btnRegresarC = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateGray;
-            this.panel1.Controls.Add(this.btnCancelarM);
+            this.panel1.Controls.Add(this.btnRegresarC);
+            this.panel1.Controls.Add(this.btnCancelarC);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnGuardarC);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dgvClientes);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(782, 535);
+            this.panel1.Size = new System.Drawing.Size(782, 538);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCancelarC
+            // 
+            this.btnCancelarC.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCancelarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarC.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarC.Location = new System.Drawing.Point(505, 469);
+            this.btnCancelarC.Name = "btnCancelarC";
+            this.btnCancelarC.Size = new System.Drawing.Size(90, 36);
+            this.btnCancelarC.TabIndex = 23;
+            this.btnCancelarC.Text = "Cancelar";
+            this.btnCancelarC.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -90,19 +105,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Clientes";
             // 
-            // btnCancelarM
-            // 
-            this.btnCancelarM.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCancelarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarM.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarM.Location = new System.Drawing.Point(505, 469);
-            this.btnCancelarM.Name = "btnCancelarM";
-            this.btnCancelarM.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarM.TabIndex = 23;
-            this.btnCancelarM.Text = "Cancelar";
-            this.btnCancelarM.UseVisualStyleBackColor = false;
-            // 
             // btnGuardarC
             // 
             this.btnGuardarC.BackColor = System.Drawing.Color.SteelBlue;
@@ -116,16 +118,6 @@
             this.btnGuardarC.Text = "Guardar";
             this.btnGuardarC.UseVisualStyleBackColor = false;
             // 
-            // dgvClientes
-            // 
-            this.dgvClientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(9, 87);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.RowTemplate.Height = 24;
-            this.dgvClientes.Size = new System.Drawing.Size(758, 128);
-            this.dgvClientes.TabIndex = 21;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -137,7 +129,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtRFC);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtFechaC);
+            this.panel2.Controls.Add(this.txtTelefonoC);
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
@@ -147,10 +139,28 @@
             this.panel2.Size = new System.Drawing.Size(755, 214);
             this.panel2.TabIndex = 20;
             // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(454, 173);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(279, 22);
+            this.txtCorreo.TabIndex = 16;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
+            this.label6.Location = new System.Drawing.Point(373, 176);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Correo";
+            // 
             // txtIDCliente
             // 
             this.txtIDCliente.Location = new System.Drawing.Point(133, 35);
             this.txtIDCliente.Name = "txtIDCliente";
+            this.txtIDCliente.ReadOnly = true;
             this.txtIDCliente.Size = new System.Drawing.Size(204, 22);
             this.txtIDCliente.TabIndex = 14;
             // 
@@ -158,7 +168,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
-            this.label5.Location = new System.Drawing.Point(14, 38);
+            this.label5.Location = new System.Drawing.Point(14, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 13;
@@ -199,12 +209,12 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "RFC";
             // 
-            // txtFechaC
+            // txtTelefonoC
             // 
-            this.txtFechaC.Location = new System.Drawing.Point(529, 35);
-            this.txtFechaC.Name = "txtFechaC";
-            this.txtFechaC.Size = new System.Drawing.Size(204, 22);
-            this.txtFechaC.TabIndex = 8;
+            this.txtTelefonoC.Location = new System.Drawing.Point(529, 35);
+            this.txtTelefonoC.Name = "txtTelefonoC";
+            this.txtTelefonoC.Size = new System.Drawing.Size(204, 22);
+            this.txtTelefonoC.TabIndex = 8;
             // 
             // txtNombre
             // 
@@ -219,9 +229,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
             this.label11.Location = new System.Drawing.Point(407, 35);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 20);
+            this.label11.Size = new System.Drawing.Size(66, 20);
             this.label11.TabIndex = 4;
-            this.label11.Text = "Fecha";
+            this.label11.Text = "Teléfono";
             // 
             // label10
             // 
@@ -243,33 +253,39 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Revise los datos de los clientes";
             // 
+            // dgvClientes
+            // 
+            this.dgvClientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Location = new System.Drawing.Point(9, 87);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.RowTemplate.Height = 24;
+            this.dgvClientes.Size = new System.Drawing.Size(758, 128);
+            this.dgvClientes.TabIndex = 21;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 17);
             this.label3.TabIndex = 19;
             this.label3.Text = "Listado de los clientes";
             // 
-            // txtCorreo
+            // btnRegresarC
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(454, 173);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(279, 22);
-            this.txtCorreo.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
-            this.label6.Location = new System.Drawing.Point(373, 176);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Correo";
+            this.btnRegresarC.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarC.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarC.Location = new System.Drawing.Point(337, 469);
+            this.btnRegresarC.Name = "btnRegresarC";
+            this.btnRegresarC.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarC.TabIndex = 24;
+            this.btnRegresarC.Text = "Regresar";
+            this.btnRegresarC.UseVisualStyleBackColor = false;
             // 
             // Clientes
             // 
@@ -283,9 +299,9 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,7 +311,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnCancelarM;
+        private System.Windows.Forms.Button btnCancelarC;
         private System.Windows.Forms.Button btnGuardarC;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtIDCliente;
@@ -304,7 +320,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtFechaC;
+        private System.Windows.Forms.TextBox txtTelefonoC;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -313,5 +329,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnRegresarC;
     }
 }

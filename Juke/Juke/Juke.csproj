@@ -207,12 +207,6 @@
     <Compile Include="Vistas\Gastos.Designer.cs">
       <DependentUpon>Gastos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Inventario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Inventario.Designer.cs">
-      <DependentUpon>Inventario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\Material.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,12 +224,6 @@
     </Compile>
     <Compile Include="Vistas\ModDatosEmpleado.designer.cs">
       <DependentUpon>ModDatosEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Modificar_Tarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Modificar_Tarea.Designer.cs">
-      <DependentUpon>Modificar_Tarea.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\modusuario.cs">
       <SubType>Form</SubType>
@@ -334,9 +322,6 @@
     <EmbeddedResource Include="Vistas\Gastos.resx">
       <DependentUpon>Gastos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Inventario.resx">
-      <DependentUpon>Inventario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Material.resx">
       <DependentUpon>Material.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +361,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Maps2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoJuke.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

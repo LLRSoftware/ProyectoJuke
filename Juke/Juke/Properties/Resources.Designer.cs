@@ -63,6 +63,16 @@ namespace Juke.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoJuke {
+            get {
+                object obj = ResourceManager.GetObject("LogoJuke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Maps {
             get {
                 object obj = ResourceManager.GetObject("Maps", resourceCulture);

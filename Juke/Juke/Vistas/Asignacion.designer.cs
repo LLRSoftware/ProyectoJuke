@@ -50,6 +50,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.Emp_Asg_CveEmp = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ListaNomina = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Emp_Asg_BA = new System.Windows.Forms.TextBox();
             this.Emp_Asg_Sueldo = new System.Windows.Forms.TextBox();
@@ -59,8 +61,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.btnCancelarA = new System.Windows.Forms.Button();
             this.btnGuardarA = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ListaNomina = new System.Windows.Forms.ComboBox();
             this.btnRegresarA = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -126,7 +126,6 @@
             this.label12.Size = new System.Drawing.Size(99, 20);
             this.label12.TabIndex = 11;
             this.label12.Text = "Tipo de plaza";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
             // 
@@ -137,7 +136,6 @@
             this.label13.Size = new System.Drawing.Size(70, 17);
             this.label13.TabIndex = 12;
             this.label13.Text = "Ingresos";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // btn_Asg_Guardar
             // 
@@ -297,6 +295,24 @@
             this.panel3.Size = new System.Drawing.Size(739, 147);
             this.panel3.TabIndex = 38;
             // 
+            // ListaNomina
+            // 
+            this.ListaNomina.FormattingEnabled = true;
+            this.ListaNomina.Location = new System.Drawing.Point(324, 16);
+            this.ListaNomina.Name = "ListaNomina";
+            this.ListaNomina.Size = new System.Drawing.Size(338, 24);
+            this.ListaNomina.TabIndex = 49;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(196, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 20);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Clave de nómina";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -384,24 +400,7 @@
             this.btnGuardarA.TabIndex = 48;
             this.btnGuardarA.Text = "Guardar";
             this.btnGuardarA.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(196, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 20);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Clave de nómina";
-            // 
-            // ListaNomina
-            // 
-            this.ListaNomina.FormattingEnabled = true;
-            this.ListaNomina.Location = new System.Drawing.Point(324, 16);
-            this.ListaNomina.Name = "ListaNomina";
-            this.ListaNomina.Size = new System.Drawing.Size(338, 24);
-            this.ListaNomina.TabIndex = 49;
+            this.btnGuardarA.Click += new System.EventHandler(this.btnGuardarA_Click);
             // 
             // btnRegresarA
             // 

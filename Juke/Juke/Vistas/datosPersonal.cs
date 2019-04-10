@@ -34,30 +34,12 @@ namespace WindowsFormsApp1
         }
 
         int idEmpleado;
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void btn_DP_sig_Click(object sender, EventArgs e) // Boton siguiente para guardar los datos de las cajas de texto
         {
             insertaDatos();
         }
 
-        private void datosPersonal_Load(object sender, EventArgs e)
-        {
-
-        }
 
 
         public void insertaDatos() {
@@ -84,13 +66,9 @@ namespace WindowsFormsApp1
                 asig.Show();  // manda llamar la ventana Asignación
                 this.Hide(); // Cierra la vista Datos Personal.
             }
-
-
-
-
         }
-
-        private void label9_Click(object sender, EventArgs e)
+        
+        private void btn_DP_sig_Click_1(object sender, EventArgs e)
         {
 
         }

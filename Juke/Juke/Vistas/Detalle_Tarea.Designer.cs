@@ -74,6 +74,7 @@
             this.btnRegresarDT.TabIndex = 85;
             this.btnRegresarDT.Text = "Regresar";
             this.btnRegresarDT.UseVisualStyleBackColor = false;
+            this.btnRegresarDT.Click += new System.EventHandler(this.btnRegresarDT_Click);
             // 
             // btnCancelarDT
             // 
@@ -87,6 +88,7 @@
             this.btnCancelarDT.TabIndex = 84;
             this.btnCancelarDT.Text = "Cancelar";
             this.btnCancelarDT.UseVisualStyleBackColor = false;
+            this.btnCancelarDT.Click += new System.EventHandler(this.btnCancelarDT_Click);
             // 
             // btnGuardar
             // 
@@ -100,6 +102,7 @@
             this.btnGuardar.TabIndex = 80;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel3
             // 
@@ -227,7 +230,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "Detalle_Tarea";
             this.Text = "Detalle_Tarea";
-            this.Load += new System.EventHandler(this.Detalle_Tarea_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

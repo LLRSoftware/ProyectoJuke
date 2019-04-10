@@ -114,7 +114,6 @@
             this.bajaDeEmpleadosToolStripMenuItem.Name = "bajaDeEmpleadosToolStripMenuItem";
             this.bajaDeEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(315, 28);
             this.bajaDeEmpleadosToolStripMenuItem.Text = "Baja de Empleados";
-            this.bajaDeEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.bajaDeEmpleadosToolStripMenuItem_Click);
             // 
             // nominaToolStripMenuItem
             // 
@@ -129,16 +128,15 @@
             // altaToolStripMenuItem
             // 
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
             // cancelaciónToolStripMenuItem
             // 
             this.cancelaciónToolStripMenuItem.Name = "cancelaciónToolStripMenuItem";
-            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
             this.cancelaciónToolStripMenuItem.Text = "Cancelación";
-            this.cancelaciónToolStripMenuItem.Click += new System.EventHandler(this.cancelaciónToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
@@ -170,7 +168,6 @@
             this.bajaUsuarioToolStripMenuItem.Name = "bajaUsuarioToolStripMenuItem";
             this.bajaUsuarioToolStripMenuItem.Size = new System.Drawing.Size(261, 28);
             this.bajaUsuarioToolStripMenuItem.Text = "Baja Usuario";
-            this.bajaUsuarioToolStripMenuItem.Click += new System.EventHandler(this.bajaUsuarioToolStripMenuItem_Click);
             // 
             // gastosToolStripMenuItem
             // 

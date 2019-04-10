@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtClaveCompra = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ListaMaterial = new System.Windows.Forms.ComboBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.btnTerminarCompra = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtClaveCompra = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,6 +74,14 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(749, 175);
             this.panel3.TabIndex = 28;
+            // 
+            // txtClaveCompra
+            // 
+            this.txtClaveCompra.Location = new System.Drawing.Point(133, 94);
+            this.txtClaveCompra.Name = "txtClaveCompra";
+            this.txtClaveCompra.ReadOnly = true;
+            this.txtClaveCompra.Size = new System.Drawing.Size(250, 22);
+            this.txtClaveCompra.TabIndex = 54;
             // 
             // label2
             // 
@@ -142,6 +150,7 @@
             this.btnAgregarCompra.TabIndex = 27;
             this.btnAgregarCompra.Text = "Agregar compra";
             this.btnAgregarCompra.UseVisualStyleBackColor = false;
+            this.btnAgregarCompra.Click += new System.EventHandler(this.btnAgregarCompra_Click);
             // 
             // btnCancelarCompra
             // 
@@ -155,6 +164,7 @@
             this.btnCancelarCompra.TabIndex = 26;
             this.btnCancelarCompra.Text = "Cancelar compra";
             this.btnCancelarCompra.UseVisualStyleBackColor = false;
+            this.btnCancelarCompra.Click += new System.EventHandler(this.btnCancelarCompra_Click);
             // 
             // btnTerminarCompra
             // 
@@ -168,6 +178,7 @@
             this.btnTerminarCompra.TabIndex = 25;
             this.btnTerminarCompra.Text = "Terminar compra";
             this.btnTerminarCompra.UseVisualStyleBackColor = false;
+            this.btnTerminarCompra.Click += new System.EventHandler(this.btnTerminarCompra_Click);
             // 
             // panel2
             // 
@@ -189,14 +200,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Detalle de Compra";
             // 
-            // txtClaveCompra
-            // 
-            this.txtClaveCompra.Location = new System.Drawing.Point(133, 94);
-            this.txtClaveCompra.Name = "txtClaveCompra";
-            this.txtClaveCompra.ReadOnly = true;
-            this.txtClaveCompra.Size = new System.Drawing.Size(250, 22);
-            this.txtClaveCompra.TabIndex = 54;
-            // 
             // DetalleCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,7 +208,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "DetalleCompra";
             this.Text = "Detalle_Compra";
-            this.Load += new System.EventHandler(this.DetalleCompra_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

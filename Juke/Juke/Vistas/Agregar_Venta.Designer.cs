@@ -78,7 +78,7 @@
             this.btnRegresarV.Location = new System.Drawing.Point(367, 465);
             this.btnRegresarV.Name = "btnRegresarV";
             this.btnRegresarV.Size = new System.Drawing.Size(90, 36);
-            this.btnRegresarV.TabIndex = 55;
+            this.btnRegresarV.TabIndex = 11;
             this.btnRegresarV.Text = "Regresar";
             this.btnRegresarV.UseVisualStyleBackColor = false;
             this.btnRegresarV.Click += new System.EventHandler(this.btnRegresarV_Click);
@@ -92,7 +92,7 @@
             this.btnCancelarV.Location = new System.Drawing.Point(528, 465);
             this.btnCancelarV.Name = "btnCancelarV";
             this.btnCancelarV.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarV.TabIndex = 53;
+            this.btnCancelarV.TabIndex = 10;
             this.btnCancelarV.Text = "Cancelar";
             this.btnCancelarV.UseVisualStyleBackColor = false;
             this.btnCancelarV.Click += new System.EventHandler(this.btnCancelarV_Click);
@@ -106,7 +106,7 @@
             this.btnGuardarV.Location = new System.Drawing.Point(680, 465);
             this.btnGuardarV.Name = "btnGuardarV";
             this.btnGuardarV.Size = new System.Drawing.Size(90, 36);
-            this.btnGuardarV.TabIndex = 4;
+            this.btnGuardarV.TabIndex = 3;
             this.btnGuardarV.Text = "Guardar";
             this.btnGuardarV.UseVisualStyleBackColor = false;
             this.btnGuardarV.Click += new System.EventHandler(this.btnGuardarV_Click);
@@ -146,8 +146,10 @@
             // 
             this.txtImporte.Location = new System.Drawing.Point(164, 244);
             this.txtImporte.Name = "txtImporte";
+            this.txtImporte.ReadOnly = true;
             this.txtImporte.Size = new System.Drawing.Size(500, 22);
-            this.txtImporte.TabIndex = 3;
+            this.txtImporte.TabIndex = 12;
+            this.txtImporte.Text = "0.00";
             // 
             // label6
             // 

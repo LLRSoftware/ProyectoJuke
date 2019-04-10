@@ -29,15 +29,26 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresarE = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Emp_FecFin = new System.Windows.Forms.DateTimePicker();
+            this.Emp_FecIni = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Emp_FecNac = new System.Windows.Forms.DateTimePicker();
+            this.Emp_EdoNac = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Emp_CiuNac = new System.Windows.Forms.TextBox();
             this.Emp_EdoCivil = new System.Windows.Forms.ComboBox();
-            this.Emp_Edad = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Emp_RFC = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_Emp_Sig = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Emp_RFC = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Emp_Edad = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Emp_Sexo = new System.Windows.Forms.ComboBox();
             this.Emp_CURP = new System.Windows.Forms.TextBox();
@@ -49,25 +60,14 @@
             this.Emp_ApePat = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.Emp_FecNac = new System.Windows.Forms.DateTimePicker();
-            this.Emp_EdoNac = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Emp_CiuNac = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.Emp_FecFin = new System.Windows.Forms.DateTimePicker();
-            this.Emp_FecIni = new System.Windows.Forms.DateTimePicker();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnRegresarE = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_Emp_Sig = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,127 @@
             this.panel1.Size = new System.Drawing.Size(784, 536);
             this.panel1.TabIndex = 0;
             // 
+            // btnRegresarE
+            // 
+            this.btnRegresarE.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRegresarE.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarE.Location = new System.Drawing.Point(403, 472);
+            this.btnRegresarE.Name = "btnRegresarE";
+            this.btnRegresarE.Size = new System.Drawing.Size(141, 37);
+            this.btnRegresarE.TabIndex = 75;
+            this.btnRegresarE.Text = "Regresar";
+            this.btnRegresarE.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel5.Controls.Add(this.Emp_FecFin);
+            this.panel5.Controls.Add(this.Emp_FecIni);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label17);
+            this.panel5.Location = new System.Drawing.Point(12, 371);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(743, 80);
+            this.panel5.TabIndex = 74;
+            // 
+            // Emp_FecFin
+            // 
+            this.Emp_FecFin.Location = new System.Drawing.Point(450, 43);
+            this.Emp_FecFin.Name = "Emp_FecFin";
+            this.Emp_FecFin.Size = new System.Drawing.Size(275, 22);
+            this.Emp_FecFin.TabIndex = 73;
+            // 
+            // Emp_FecIni
+            // 
+            this.Emp_FecIni.Location = new System.Drawing.Point(95, 43);
+            this.Emp_FecIni.Name = "Emp_FecIni";
+            this.Emp_FecIni.Size = new System.Drawing.Size(268, 22);
+            this.Emp_FecIni.TabIndex = 72;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(387, 43);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(47, 20);
+            this.label19.TabIndex = 71;
+            this.label19.Text = "Hasta";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(14, 45);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(51, 20);
+            this.label18.TabIndex = 70;
+            this.label18.Text = "Desde";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(14, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(88, 20);
+            this.label17.TabIndex = 69;
+            this.label17.Text = "Antiguedad";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.Emp_FecNac);
+            this.panel4.Controls.Add(this.Emp_EdoNac);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.Emp_CiuNac);
+            this.panel4.Controls.Add(this.Emp_EdoCivil);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.Emp_RFC);
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.Emp_Edad);
+            this.panel4.Location = new System.Drawing.Point(13, 207);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(743, 148);
+            this.panel4.TabIndex = 73;
+            // 
+            // Emp_FecNac
+            // 
+            this.Emp_FecNac.Location = new System.Drawing.Point(177, 15);
+            this.Emp_FecNac.Name = "Emp_FecNac";
+            this.Emp_FecNac.Size = new System.Drawing.Size(327, 22);
+            this.Emp_FecNac.TabIndex = 76;
+            // 
+            // Emp_EdoNac
+            // 
+            this.Emp_EdoNac.Location = new System.Drawing.Point(558, 50);
+            this.Emp_EdoNac.Name = "Emp_EdoNac";
+            this.Emp_EdoNac.Size = new System.Drawing.Size(166, 22);
+            this.Emp_EdoNac.TabIndex = 75;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(373, 48);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(153, 20);
+            this.label12.TabIndex = 74;
+            this.label12.Text = "Estado de nacimiento";
+            // 
+            // Emp_CiuNac
+            // 
+            this.Emp_CiuNac.Location = new System.Drawing.Point(178, 48);
+            this.Emp_CiuNac.Name = "Emp_CiuNac";
+            this.Emp_CiuNac.Size = new System.Drawing.Size(166, 22);
+            this.Emp_CiuNac.TabIndex = 73;
+            // 
             // Emp_EdoCivil
             // 
             this.Emp_EdoCivil.FormattingEnabled = true;
@@ -91,14 +212,6 @@
             this.Emp_EdoCivil.Name = "Emp_EdoCivil";
             this.Emp_EdoCivil.Size = new System.Drawing.Size(333, 24);
             this.Emp_EdoCivil.TabIndex = 64;
-            // 
-            // Emp_Edad
-            // 
-            this.Emp_Edad.Location = new System.Drawing.Point(613, 13);
-            this.Emp_Edad.Name = "Emp_Edad";
-            this.Emp_Edad.ReadOnly = true;
-            this.Emp_Edad.Size = new System.Drawing.Size(111, 22);
-            this.Emp_Edad.TabIndex = 62;
             // 
             // label15
             // 
@@ -110,22 +223,25 @@
             this.label15.TabIndex = 61;
             this.label15.Text = "Estado civil";
             // 
-            // label14
+            // label11
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(554, 15);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 20);
-            this.label14.TabIndex = 60;
-            this.label14.Text = "Edad";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(14, 50);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(156, 20);
+            this.label11.TabIndex = 72;
+            this.label11.Text = "Ciudad de nacimiento";
             // 
-            // Emp_RFC
+            // label10
             // 
-            this.Emp_RFC.Location = new System.Drawing.Point(176, 81);
-            this.Emp_RFC.Name = "Emp_RFC";
-            this.Emp_RFC.Size = new System.Drawing.Size(333, 22);
-            this.Emp_RFC.TabIndex = 52;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(14, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(150, 20);
+            this.label10.TabIndex = 71;
+            this.label10.Text = "Fecha de Nacimiento";
             // 
             // label6
             // 
@@ -137,38 +253,30 @@
             this.label6.TabIndex = 50;
             this.label6.Text = "RFC";
             // 
-            // btn_Emp_Sig
+            // Emp_RFC
             // 
-            this.btn_Emp_Sig.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Emp_Sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Emp_Sig.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_Emp_Sig.ForeColor = System.Drawing.Color.White;
-            this.btn_Emp_Sig.Location = new System.Drawing.Point(571, 472);
-            this.btn_Emp_Sig.Name = "btn_Emp_Sig";
-            this.btn_Emp_Sig.Size = new System.Drawing.Size(185, 37);
-            this.btn_Emp_Sig.TabIndex = 49;
-            this.btn_Emp_Sig.Text = "Guardar y continuar";
-            this.btn_Emp_Sig.UseVisualStyleBackColor = false;
+            this.Emp_RFC.Location = new System.Drawing.Point(176, 81);
+            this.Emp_RFC.Name = "Emp_RFC";
+            this.Emp_RFC.Size = new System.Drawing.Size(333, 22);
+            this.Emp_RFC.TabIndex = 52;
             // 
-            // panel2
+            // label14
             // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(-1, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(785, 48);
-            this.panel2.TabIndex = 71;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(554, 15);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 20);
+            this.label14.TabIndex = 60;
+            this.label14.Text = "Edad";
             // 
-            // label5
+            // Emp_Edad
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(8, 13);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 25);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Empleados";
+            this.Emp_Edad.Location = new System.Drawing.Point(613, 13);
+            this.Emp_Edad.Name = "Emp_Edad";
+            this.Emp_Edad.ReadOnly = true;
+            this.Emp_Edad.Size = new System.Drawing.Size(111, 22);
+            this.Emp_Edad.TabIndex = 62;
             // 
             // panel3
             // 
@@ -274,146 +382,39 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "Apellido paterno";
             // 
-            // panel4
+            // panel2
             // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.Emp_FecNac);
-            this.panel4.Controls.Add(this.Emp_EdoNac);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.Emp_CiuNac);
-            this.panel4.Controls.Add(this.Emp_EdoCivil);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.Emp_RFC);
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.Emp_Edad);
-            this.panel4.Location = new System.Drawing.Point(13, 207);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(743, 148);
-            this.panel4.TabIndex = 73;
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(-1, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(785, 48);
+            this.panel2.TabIndex = 71;
             // 
-            // Emp_FecNac
+            // label5
             // 
-            this.Emp_FecNac.Location = new System.Drawing.Point(177, 15);
-            this.Emp_FecNac.Name = "Emp_FecNac";
-            this.Emp_FecNac.Size = new System.Drawing.Size(327, 22);
-            this.Emp_FecNac.TabIndex = 76;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.SystemColors.Window;
+            this.label5.Location = new System.Drawing.Point(8, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Empleados";
             // 
-            // Emp_EdoNac
+            // btn_Emp_Sig
             // 
-            this.Emp_EdoNac.Location = new System.Drawing.Point(558, 50);
-            this.Emp_EdoNac.Name = "Emp_EdoNac";
-            this.Emp_EdoNac.Size = new System.Drawing.Size(166, 22);
-            this.Emp_EdoNac.TabIndex = 75;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(373, 48);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(153, 20);
-            this.label12.TabIndex = 74;
-            this.label12.Text = "Estado de nacimiento";
-            // 
-            // Emp_CiuNac
-            // 
-            this.Emp_CiuNac.Location = new System.Drawing.Point(178, 48);
-            this.Emp_CiuNac.Name = "Emp_CiuNac";
-            this.Emp_CiuNac.Size = new System.Drawing.Size(166, 22);
-            this.Emp_CiuNac.TabIndex = 73;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(14, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(156, 20);
-            this.label11.TabIndex = 72;
-            this.label11.Text = "Ciudad de nacimiento";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(14, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 20);
-            this.label10.TabIndex = 71;
-            this.label10.Text = "Fecha de Nacimiento";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.Emp_FecFin);
-            this.panel5.Controls.Add(this.Emp_FecIni);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Location = new System.Drawing.Point(12, 371);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(743, 80);
-            this.panel5.TabIndex = 74;
-            // 
-            // Emp_FecFin
-            // 
-            this.Emp_FecFin.Location = new System.Drawing.Point(450, 43);
-            this.Emp_FecFin.Name = "Emp_FecFin";
-            this.Emp_FecFin.Size = new System.Drawing.Size(275, 22);
-            this.Emp_FecFin.TabIndex = 73;
-            // 
-            // Emp_FecIni
-            // 
-            this.Emp_FecIni.Location = new System.Drawing.Point(95, 43);
-            this.Emp_FecIni.Name = "Emp_FecIni";
-            this.Emp_FecIni.Size = new System.Drawing.Size(268, 22);
-            this.Emp_FecIni.TabIndex = 72;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(387, 43);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(47, 20);
-            this.label19.TabIndex = 71;
-            this.label19.Text = "Hasta";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(14, 45);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 20);
-            this.label18.TabIndex = 70;
-            this.label18.Text = "Desde";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(14, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(88, 20);
-            this.label17.TabIndex = 69;
-            this.label17.Text = "Antiguedad";
-            // 
-            // btnRegresarE
-            // 
-            this.btnRegresarE.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRegresarE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.btnRegresarE.ForeColor = System.Drawing.Color.White;
-            this.btnRegresarE.Location = new System.Drawing.Point(403, 472);
-            this.btnRegresarE.Name = "btnRegresarE";
-            this.btnRegresarE.Size = new System.Drawing.Size(141, 37);
-            this.btnRegresarE.TabIndex = 75;
-            this.btnRegresarE.Text = "Regresar";
-            this.btnRegresarE.UseVisualStyleBackColor = false;
+            this.btn_Emp_Sig.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_Emp_Sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Emp_Sig.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btn_Emp_Sig.ForeColor = System.Drawing.Color.White;
+            this.btn_Emp_Sig.Location = new System.Drawing.Point(571, 472);
+            this.btn_Emp_Sig.Name = "btn_Emp_Sig";
+            this.btn_Emp_Sig.Size = new System.Drawing.Size(185, 37);
+            this.btn_Emp_Sig.TabIndex = 49;
+            this.btn_Emp_Sig.Text = "Guardar y continuar";
+            this.btn_Emp_Sig.UseVisualStyleBackColor = false;
+            this.btn_Emp_Sig.Click += new System.EventHandler(this.btn_Emp_Sig_Click);
             // 
             // empleados
             // 
@@ -425,14 +426,14 @@
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.empleados_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

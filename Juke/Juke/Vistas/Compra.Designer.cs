@@ -30,10 +30,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresarC = new System.Windows.Forms.Button();
             this.btnCancelarC = new System.Windows.Forms.Button();
             this.btnGuardarC = new System.Windows.Forms.Button();
             this.dgvCompra = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtGastoC = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtUsuarioC = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtIDCompra = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,11 +52,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUsuarioC = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtGastoC = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnRegresarC = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             this.panel4.SuspendLayout();
@@ -72,6 +72,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(785, 533);
             this.panel1.TabIndex = 4;
+            // 
+            // btnRegresarC
+            // 
+            this.btnRegresarC.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarC.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarC.Location = new System.Drawing.Point(356, 471);
+            this.btnRegresarC.Name = "btnRegresarC";
+            this.btnRegresarC.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarC.TabIndex = 19;
+            this.btnRegresarC.Text = "Regresar";
+            this.btnRegresarC.UseVisualStyleBackColor = false;
+            this.btnRegresarC.Click += new System.EventHandler(this.btnRegresarC_Click);
             // 
             // btnCancelarC
             // 
@@ -130,7 +144,42 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(755, 171);
             this.panel4.TabIndex = 5;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // txtGastoC
+            // 
+            this.txtGastoC.Location = new System.Drawing.Point(448, 71);
+            this.txtGastoC.Name = "txtGastoC";
+            this.txtGastoC.ReadOnly = true;
+            this.txtGastoC.Size = new System.Drawing.Size(228, 22);
+            this.txtGastoC.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
+            this.label9.Location = new System.Drawing.Point(373, 74);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 20);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Gasto";
+            // 
+            // txtUsuarioC
+            // 
+            this.txtUsuarioC.Location = new System.Drawing.Point(133, 117);
+            this.txtUsuarioC.Name = "txtUsuarioC";
+            this.txtUsuarioC.ReadOnly = true;
+            this.txtUsuarioC.Size = new System.Drawing.Size(204, 22);
+            this.txtUsuarioC.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
+            this.label8.Location = new System.Drawing.Point(16, 117);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 20);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Usuario";
             // 
             // label6
             // 
@@ -150,7 +199,6 @@
             this.txtIDCompra.ReadOnly = true;
             this.txtIDCompra.Size = new System.Drawing.Size(204, 22);
             this.txtIDCompra.TabIndex = 14;
-            this.txtIDCompra.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label5
             // 
@@ -169,7 +217,6 @@
             this.txtFolioC.ReadOnly = true;
             this.txtFolioC.Size = new System.Drawing.Size(204, 22);
             this.txtFolioC.TabIndex = 12;
-            this.txtFolioC.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label2
             // 
@@ -257,55 +304,6 @@
             this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Compra";
-            // 
-            // txtUsuarioC
-            // 
-            this.txtUsuarioC.Location = new System.Drawing.Point(133, 117);
-            this.txtUsuarioC.Name = "txtUsuarioC";
-            this.txtUsuarioC.ReadOnly = true;
-            this.txtUsuarioC.Size = new System.Drawing.Size(204, 22);
-            this.txtUsuarioC.TabIndex = 17;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
-            this.label8.Location = new System.Drawing.Point(16, 117);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 20);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Usuario";
-            // 
-            // txtGastoC
-            // 
-            this.txtGastoC.Location = new System.Drawing.Point(448, 71);
-            this.txtGastoC.Name = "txtGastoC";
-            this.txtGastoC.ReadOnly = true;
-            this.txtGastoC.Size = new System.Drawing.Size(228, 22);
-            this.txtGastoC.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
-            this.label9.Location = new System.Drawing.Point(373, 74);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 20);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Gasto";
-            // 
-            // btnRegresarC
-            // 
-            this.btnRegresarC.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRegresarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarC.ForeColor = System.Drawing.Color.White;
-            this.btnRegresarC.Location = new System.Drawing.Point(356, 471);
-            this.btnRegresarC.Name = "btnRegresarC";
-            this.btnRegresarC.Size = new System.Drawing.Size(90, 36);
-            this.btnRegresarC.TabIndex = 19;
-            this.btnRegresarC.Text = "Regresar";
-            this.btnRegresarC.UseVisualStyleBackColor = false;
             // 
             // Compra
             // 

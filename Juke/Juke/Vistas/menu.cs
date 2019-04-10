@@ -18,7 +18,7 @@ namespace menu
 {
     public partial class menu : Form
     {
-        String script= "SELECT * FROM Tarea ORDER BY Lote DESC";
+        String script= "SELECT Nombre, Lote FROM Tarea ORDER BY Lote DESC";
         Grids grids;
         conexiondb conexiondb = new conexiondb();
         empleados.empleados empleados = new empleados.empleados();
@@ -36,13 +36,14 @@ namespace menu
         DetalleVenta detalleVenta = new DetalleVenta();
         Gastos gastos = new Gastos();
         Agregar_Material agregar_material = new Agregar_Material();
-        
-        Material material = new Material();
+        Captura_Nomina captura_nomina = new Captura_Nomina();
         Nomina nomina = new Nomina();
         Proveedores proveedores = new Proveedores();
         Agregar_Material agregar_Material = new Agregar_Material();
+        Consulta_Material consulta_material = new Consulta_Material();
         Agregar_Tarea agregar_Tarea = new Agregar_Tarea();
         Tareas tareas = new Tareas();
+        Material material = new Material();
         
 
         public menu()
@@ -61,11 +62,6 @@ namespace menu
             otra.Show();
         }
 
-        private void bajaDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void altaUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             nuevo.Show();
@@ -75,16 +71,6 @@ namespace menu
         {
             //Cuerpo.Hide()
             cambio.Show();
-        }
-
-        private void bajaUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            material.Show();
         }
 
         private void realizarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,14 +90,9 @@ namespace menu
 
         private void altaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            asignacion.Show();
+            captura_nomina.Show();
         }
-
-        private void cancelaciónToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void agregarTareaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             agregar_Tarea.Show();
@@ -125,12 +106,7 @@ namespace menu
         private void agregarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             agregar_material.Show();
-        }
-
-        private void consultarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            material.Show();
-        }
+        } 
 
         private void consultarGastosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -146,6 +122,10 @@ namespace menu
         {
             venta.Show();
         }
-        
+
+        private void consultarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            material.Show();
+        }
     }
 }

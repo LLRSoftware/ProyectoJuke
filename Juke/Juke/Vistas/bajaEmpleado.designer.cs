@@ -33,26 +33,26 @@
             this.btnCancelarBE = new System.Windows.Forms.Button();
             this.btn_BE_Guardar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ListaEmpleado = new System.Windows.Forms.ComboBox();
             this.Emp_BE_Fec = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Emp_BE_Mes = new System.Windows.Forms.TextBox();
-            this.Emp_BE_Dias = new System.Windows.Forms.TextBox();
-            this.Emp_BE_Anos = new System.Windows.Forms.TextBox();
+            this.txtEmp_BE_Mes = new System.Windows.Forms.TextBox();
+            this.txtEmp_BE_Dias = new System.Windows.Forms.TextBox();
+            this.txtEmp_BE_Anos = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Emp_BE_Mot = new System.Windows.Forms.TextBox();
+            this.txtEmp_BE_Mot = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Emp_BE_FecFin = new System.Windows.Forms.DateTimePicker();
+            this.dateEmp_BE_FecFin = new System.Windows.Forms.DateTimePicker();
             this.Emp_BE_FecIni = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.ListaEmpleado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,6 +83,7 @@
             this.btnRegresarBE.TabIndex = 66;
             this.btnRegresarBE.Text = "Regresar";
             this.btnRegresarBE.UseVisualStyleBackColor = false;
+            this.btnRegresarBE.Click += new System.EventHandler(this.btnRegresarBE_Click);
             // 
             // btnCancelarBE
             // 
@@ -96,6 +97,7 @@
             this.btnCancelarBE.TabIndex = 65;
             this.btnCancelarBE.Text = "Cancelar";
             this.btnCancelarBE.UseVisualStyleBackColor = false;
+            this.btnCancelarBE.Click += new System.EventHandler(this.btnCancelarBE_Click);
             // 
             // btn_BE_Guardar
             // 
@@ -110,6 +112,7 @@
             this.btn_BE_Guardar.TabIndex = 63;
             this.btn_BE_Guardar.Text = "Guardar";
             this.btn_BE_Guardar.UseVisualStyleBackColor = false;
+            this.btn_BE_Guardar.Click += new System.EventHandler(this.btn_BE_Guardar_Click);
             // 
             // panel3
             // 
@@ -119,24 +122,31 @@
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.Emp_BE_Mes);
-            this.panel3.Controls.Add(this.Emp_BE_Dias);
-            this.panel3.Controls.Add(this.Emp_BE_Anos);
+            this.panel3.Controls.Add(this.txtEmp_BE_Mes);
+            this.panel3.Controls.Add(this.txtEmp_BE_Dias);
+            this.panel3.Controls.Add(this.txtEmp_BE_Anos);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.Emp_BE_Mot);
+            this.panel3.Controls.Add(this.txtEmp_BE_Mot);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.Emp_BE_FecFin);
+            this.panel3.Controls.Add(this.dateEmp_BE_FecFin);
             this.panel3.Controls.Add(this.Emp_BE_FecIni);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(12, 67);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(756, 384);
             this.panel3.TabIndex = 44;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // ListaEmpleado
+            // 
+            this.ListaEmpleado.FormattingEnabled = true;
+            this.ListaEmpleado.Location = new System.Drawing.Point(189, 308);
+            this.ListaEmpleado.Name = "ListaEmpleado";
+            this.ListaEmpleado.Size = new System.Drawing.Size(300, 28);
+            this.ListaEmpleado.TabIndex = 62;
             // 
             // Emp_BE_Fec
             // 
@@ -176,29 +186,29 @@
             this.label9.TabIndex = 56;
             this.label9.Text = "Finalizado por";
             // 
-            // Emp_BE_Mes
+            // txtEmp_BE_Mes
             // 
-            this.Emp_BE_Mes.Location = new System.Drawing.Point(473, 191);
-            this.Emp_BE_Mes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_Mes.Name = "Emp_BE_Mes";
-            this.Emp_BE_Mes.Size = new System.Drawing.Size(79, 27);
-            this.Emp_BE_Mes.TabIndex = 55;
+            this.txtEmp_BE_Mes.Location = new System.Drawing.Point(473, 191);
+            this.txtEmp_BE_Mes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmp_BE_Mes.Name = "txtEmp_BE_Mes";
+            this.txtEmp_BE_Mes.Size = new System.Drawing.Size(79, 27);
+            this.txtEmp_BE_Mes.TabIndex = 55;
             // 
-            // Emp_BE_Dias
+            // txtEmp_BE_Dias
             // 
-            this.Emp_BE_Dias.Location = new System.Drawing.Point(645, 191);
-            this.Emp_BE_Dias.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_Dias.Name = "Emp_BE_Dias";
-            this.Emp_BE_Dias.Size = new System.Drawing.Size(79, 27);
-            this.Emp_BE_Dias.TabIndex = 54;
+            this.txtEmp_BE_Dias.Location = new System.Drawing.Point(645, 191);
+            this.txtEmp_BE_Dias.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmp_BE_Dias.Name = "txtEmp_BE_Dias";
+            this.txtEmp_BE_Dias.Size = new System.Drawing.Size(79, 27);
+            this.txtEmp_BE_Dias.TabIndex = 54;
             // 
-            // Emp_BE_Anos
+            // txtEmp_BE_Anos
             // 
-            this.Emp_BE_Anos.Location = new System.Drawing.Point(268, 191);
-            this.Emp_BE_Anos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_Anos.Name = "Emp_BE_Anos";
-            this.Emp_BE_Anos.Size = new System.Drawing.Size(79, 27);
-            this.Emp_BE_Anos.TabIndex = 53;
+            this.txtEmp_BE_Anos.Location = new System.Drawing.Point(268, 191);
+            this.txtEmp_BE_Anos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmp_BE_Anos.Name = "txtEmp_BE_Anos";
+            this.txtEmp_BE_Anos.Size = new System.Drawing.Size(79, 27);
+            this.txtEmp_BE_Anos.TabIndex = 53;
             // 
             // label8
             // 
@@ -230,14 +240,14 @@
             this.label6.TabIndex = 50;
             this.label6.Text = "Años";
             // 
-            // Emp_BE_Mot
+            // txtEmp_BE_Mot
             // 
-            this.Emp_BE_Mot.Location = new System.Drawing.Point(189, 100);
-            this.Emp_BE_Mot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_Mot.Multiline = true;
-            this.Emp_BE_Mot.Name = "Emp_BE_Mot";
-            this.Emp_BE_Mot.Size = new System.Drawing.Size(535, 65);
-            this.Emp_BE_Mot.TabIndex = 49;
+            this.txtEmp_BE_Mot.Location = new System.Drawing.Point(189, 100);
+            this.txtEmp_BE_Mot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmp_BE_Mot.Multiline = true;
+            this.txtEmp_BE_Mot.Name = "txtEmp_BE_Mot";
+            this.txtEmp_BE_Mot.Size = new System.Drawing.Size(535, 65);
+            this.txtEmp_BE_Mot.TabIndex = 49;
             // 
             // label5
             // 
@@ -269,13 +279,13 @@
             this.label3.TabIndex = 46;
             this.label3.Text = "Fecha Inicial ";
             // 
-            // Emp_BE_FecFin
+            // dateEmp_BE_FecFin
             // 
-            this.Emp_BE_FecFin.Location = new System.Drawing.Point(189, 61);
-            this.Emp_BE_FecFin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Emp_BE_FecFin.Name = "Emp_BE_FecFin";
-            this.Emp_BE_FecFin.Size = new System.Drawing.Size(291, 27);
-            this.Emp_BE_FecFin.TabIndex = 45;
+            this.dateEmp_BE_FecFin.Location = new System.Drawing.Point(189, 61);
+            this.dateEmp_BE_FecFin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateEmp_BE_FecFin.Name = "dateEmp_BE_FecFin";
+            this.dateEmp_BE_FecFin.Size = new System.Drawing.Size(291, 27);
+            this.dateEmp_BE_FecFin.TabIndex = 45;
             // 
             // Emp_BE_FecIni
             // 
@@ -315,14 +325,6 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Baja de empleado";
             // 
-            // ListaEmpleado
-            // 
-            this.ListaEmpleado.FormattingEnabled = true;
-            this.ListaEmpleado.Location = new System.Drawing.Point(189, 308);
-            this.ListaEmpleado.Name = "ListaEmpleado";
-            this.ListaEmpleado.Size = new System.Drawing.Size(300, 28);
-            this.ListaEmpleado.TabIndex = 62;
-            // 
             // bajaEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -333,7 +335,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "bajaEmpleado";
             this.Text = "Baja de empleado";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -352,17 +353,17 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox Emp_BE_Mes;
-        private System.Windows.Forms.TextBox Emp_BE_Dias;
-        private System.Windows.Forms.TextBox Emp_BE_Anos;
+        private System.Windows.Forms.TextBox txtEmp_BE_Mes;
+        private System.Windows.Forms.TextBox txtEmp_BE_Dias;
+        private System.Windows.Forms.TextBox txtEmp_BE_Anos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox Emp_BE_Mot;
+        private System.Windows.Forms.TextBox txtEmp_BE_Mot;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker Emp_BE_FecFin;
+        private System.Windows.Forms.DateTimePicker dateEmp_BE_FecFin;
         private System.Windows.Forms.DateTimePicker Emp_BE_FecIni;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;

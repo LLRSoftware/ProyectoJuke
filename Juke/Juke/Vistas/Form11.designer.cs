@@ -97,7 +97,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(170, 25);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 2;
             // 
             // txtUsuario
             // 
@@ -106,7 +106,7 @@
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(170, 25);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "Admin";
             // 
             // label2
@@ -154,7 +154,7 @@
             this.Cerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(103, 48);
-            this.Cerrar.TabIndex = 15;
+            this.Cerrar.TabIndex = 4;
             this.Cerrar.Text = "Cerrar";
             this.Cerrar.UseVisualStyleBackColor = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
@@ -168,7 +168,7 @@
             this.Aceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Aceptar.Name = "Aceptar";
             this.Aceptar.Size = new System.Drawing.Size(102, 48);
-            this.Aceptar.TabIndex = 14;
+            this.Aceptar.TabIndex = 3;
             this.Aceptar.Text = "Aceptar";
             this.Aceptar.UseVisualStyleBackColor = false;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);

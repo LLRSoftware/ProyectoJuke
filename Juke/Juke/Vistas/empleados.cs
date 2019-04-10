@@ -29,51 +29,6 @@ namespace empleados
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)  // Boton siguiente, obtiene los datos de la caja de texto de la vista y realiza el Insert a la BD
-        {
-            this.insertar();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Emp_Nacionalidad_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         public void insertar()
         {
@@ -123,18 +78,11 @@ namespace empleados
             inser.llenaEdoCivil(Emp_EdoCivil);
         }
 
-        private void btn_Emp_Sel_Click(object sender, EventArgs e)
+        private void btn_Emp_Sig_Click(object sender, EventArgs e) // Boton siguiente, obtiene los datos de la caja de texto de la vista y realiza el Insert a la BD
         {
+            insertar();
 
         }
-
-        private void Emp_Sexo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-    }
-
-
-    
+    }    
 }
 

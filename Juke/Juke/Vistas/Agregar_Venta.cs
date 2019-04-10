@@ -30,6 +30,7 @@ namespace Juke.Vistas
             DateTime fecha = DateTime.Now;
             txtSerie.Text = fecha.ToString("HHmmss");
             SerieS = txtSerie.Text;
+            txtFecha.Text = fecha.ToString("yyyy-MM-dd");
         }
 
         private void Agregar_Venta_Load(object sender, EventArgs e)
@@ -65,7 +66,23 @@ namespace Juke.Vistas
 
         private void btnGuardarV_Click(object sender, EventArgs e)
         {
+            FormaPago = txtFormaPago.Text;
+            Cliente = Convert.ToInt32(ListaClientes.ValueMember + 1);
+            Fecha = txtFecha.Text;
 
+            try
+            {
+
+                conexion.abrir();
+                String Consulta = "INSERT INTO Venta (Serie, FormaPago, Fecha, Importe, Id_Cliente) VALUES("+SerieS+", '"+FormaPago+"', '"+Fecha+"', "+Importe+", "+Cliente+") ";
+                SqlCommand command = new SqlCommand(Consulta, conexion.conectar);
+                SqlDataReader reader = command.ExecuteReader();
+                conexion.cerrar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             this.Hide();
             detalleventa.Show();
         }

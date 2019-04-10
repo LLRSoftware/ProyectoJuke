@@ -15,7 +15,7 @@ namespace Juke.Vistas
 {
     public partial class Gastos : Form
     {
-        String script = "SELECT Id_Gasto, Fecha, Id_Sucursal FROM Gastos ORDER BY Fecha DESC";
+        String script = "SELECT g.Fecha, c.Folio, c.Importe FROM Gastos AS g INNER JOIN Compra AS c ON g.Id_Gasto = c.Id_Gasto";
         conexiondb conexiondb = new conexiondb();
         Grids grids;
         Nomina nomina = new Nomina();

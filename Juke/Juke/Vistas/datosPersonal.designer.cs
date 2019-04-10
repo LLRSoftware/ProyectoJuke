@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresarDP = new System.Windows.Forms.Button();
+            this.btnCancelarDP = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btn_DP_sig = new System.Windows.Forms.Button();
@@ -52,13 +55,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegresarDP = new System.Windows.Forms.Button();
-            this.btnCancelarDP = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +76,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(785, 538);
             this.panel1.TabIndex = 0;
+            // 
+            // btnRegresarDP
+            // 
+            this.btnRegresarDP.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarDP.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarDP.Location = new System.Drawing.Point(421, 487);
+            this.btnRegresarDP.Name = "btnRegresarDP";
+            this.btnRegresarDP.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarDP.TabIndex = 85;
+            this.btnRegresarDP.Text = "Regresar";
+            this.btnRegresarDP.UseVisualStyleBackColor = false;
+            // 
+            // btnCancelarDP
+            // 
+            this.btnCancelarDP.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCancelarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarDP.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarDP.Location = new System.Drawing.Point(551, 487);
+            this.btnCancelarDP.Name = "btnCancelarDP";
+            this.btnCancelarDP.Size = new System.Drawing.Size(90, 36);
+            this.btnCancelarDP.TabIndex = 84;
+            this.btnCancelarDP.Text = "Cancelar";
+            this.btnCancelarDP.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Juke.Properties.Resources.Maps2;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 333);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(369, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 83;
+            this.pictureBox1.TabStop = false;
             // 
             // label10
             // 
@@ -112,6 +148,7 @@
             this.btn_DP_sig.TabIndex = 80;
             this.btn_DP_sig.Text = "Siguiente";
             this.btn_DP_sig.UseVisualStyleBackColor = false;
+            this.btn_DP_sig.Click += new System.EventHandler(this.btn_DP_sig_Click_1);
             // 
             // panel3
             // 
@@ -307,42 +344,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Datos personales";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Juke.Properties.Resources.Maps2;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 333);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(369, 190);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 83;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnRegresarDP
-            // 
-            this.btnRegresarDP.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRegresarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarDP.ForeColor = System.Drawing.Color.White;
-            this.btnRegresarDP.Location = new System.Drawing.Point(421, 487);
-            this.btnRegresarDP.Name = "btnRegresarDP";
-            this.btnRegresarDP.Size = new System.Drawing.Size(90, 36);
-            this.btnRegresarDP.TabIndex = 85;
-            this.btnRegresarDP.Text = "Regresar";
-            this.btnRegresarDP.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelarDP
-            // 
-            this.btnCancelarDP.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCancelarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarDP.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarDP.Location = new System.Drawing.Point(551, 487);
-            this.btnCancelarDP.Name = "btnCancelarDP";
-            this.btnCancelarDP.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarDP.TabIndex = 84;
-            this.btnCancelarDP.Text = "Cancelar";
-            this.btnCancelarDP.UseVisualStyleBackColor = false;
-            // 
             // datosPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,14 +352,13 @@
             this.Controls.Add(this.panel1);
             this.Name = "datosPersonal";
             this.Text = "Datos Personales";
-            this.Load += new System.EventHandler(this.datosPersonal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

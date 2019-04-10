@@ -25,16 +25,7 @@ namespace Asignacion
         }
 
         int idEmpleado;
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void btn_Asg_Guardar_Click(object sender, EventArgs e) // Botón para guardar los datos de los campos
         {
             guardar();
@@ -80,6 +71,11 @@ namespace Asignacion
             guarda.llenaPlaza(Emp_Asi_Plaza);
             //guarda.llenaorganiza(Emp_Asi_Org); Se borró el campo en la BD
             //guarda.llenaEdo(Cbo_Asi_Emp); Se borró el campo en la BD
+        }
+
+        private void btnGuardarA_Click(object sender, EventArgs e)
+        {
+            guardar();
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.PanelAMaterial = new System.Windows.Forms.Panel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnCancelarM = new System.Windows.Forms.Button();
             this.btnGuardarM = new System.Windows.Forms.Button();
             this.dgvCompra = new System.Windows.Forms.DataGridView();
@@ -50,7 +51,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.PanelAMaterial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             this.panel4.SuspendLayout();
@@ -67,10 +67,24 @@
             this.PanelAMaterial.Controls.Add(this.panel4);
             this.PanelAMaterial.Controls.Add(this.label3);
             this.PanelAMaterial.Controls.Add(this.panel2);
-            this.PanelAMaterial.Location = new System.Drawing.Point(-2, -1);
+            this.PanelAMaterial.Location = new System.Drawing.Point(0, 1);
             this.PanelAMaterial.Name = "PanelAMaterial";
             this.PanelAMaterial.Size = new System.Drawing.Size(788, 537);
-            this.PanelAMaterial.TabIndex = 8;
+            this.PanelAMaterial.TabIndex = 9;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Location = new System.Drawing.Point(402, 471);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresar.TabIndex = 24;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnCancelarM
             // 
@@ -84,6 +98,7 @@
             this.btnCancelarM.TabIndex = 23;
             this.btnCancelarM.Text = "Cancelar";
             this.btnCancelarM.UseVisualStyleBackColor = false;
+            this.btnCancelarM.Click += new System.EventHandler(this.btnCancelarM_Click);
             // 
             // btnGuardarM
             // 
@@ -97,6 +112,7 @@
             this.btnGuardarM.TabIndex = 22;
             this.btnGuardarM.Text = "Guardar";
             this.btnGuardarM.UseVisualStyleBackColor = false;
+            this.btnGuardarM.Click += new System.EventHandler(this.btnGuardarM_Click);
             // 
             // dgvCompra
             // 
@@ -286,24 +302,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Material";
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(402, 471);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(90, 36);
-            this.btnRegresar.TabIndex = 24;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            // 
             // Material
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 533);
+            this.ClientSize = new System.Drawing.Size(789, 537);
             this.Controls.Add(this.PanelAMaterial);
             this.Name = "Material";
             this.Text = "Material";
@@ -319,13 +322,14 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Panel PanelAMaterial;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnCancelarM;
         private System.Windows.Forms.Button btnGuardarM;
         private System.Windows.Forms.DataGridView dgvCompra;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox ListaProveedorM;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNombreM;
         private System.Windows.Forms.Label label5;
@@ -340,7 +344,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox ListaProveedorM;
-        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
     }
 }

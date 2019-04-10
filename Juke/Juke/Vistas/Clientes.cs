@@ -16,5 +16,10 @@ namespace Juke.Vistas
         {
             InitializeComponent();
         }
+
+        private void btnGuardarC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

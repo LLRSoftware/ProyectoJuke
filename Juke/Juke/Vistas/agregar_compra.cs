@@ -98,7 +98,7 @@ namespace Juke.Vistas
                 SqlDataReader readerG = commandG.ExecuteReader();
                 conexiondb.cerrar();
                 conexiondb.abrir();
-                String ConsultaCompra = "INSERT INTO Compra (Fecha, Folio, Id_Gasto, Id_Usuario, Importe) VALUES('"+FechaCompra+"', '"+FolioCompra+"',1 , 1, 0)";
+                String ConsultaCompra = "INSERT INTO Compra (Fecha, Folio, Id_Gasto, Id_Usuario, Importe) VALUES('"+FechaCompra+"', '"+FolioCompra+ "',(SELECT MAX(Id_Gasto) FROM Gastos) , 1, 0)";
                 SqlCommand command = new SqlCommand(ConsultaCompra, conexiondb.conectar);
                 SqlDataReader reader = command.ExecuteReader();
                 conexiondb.cerrar();
@@ -108,6 +108,7 @@ namespace Juke.Vistas
                 MessageBox.Show(ex.ToString());
             }
             detallecompra.Show();
+            this.Hide();
 
         }
 

@@ -34,7 +34,6 @@
             this.btnTerminarV = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtVentaDV = new System.Windows.Forms.TextBox();
-            this.txtTareaDV = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtCantidadDV = new System.Windows.Forms.TextBox();
@@ -44,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.ListaTarea = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,6 +74,7 @@
             this.btnAgregarV.TabIndex = 34;
             this.btnAgregarV.Text = "Agregar venta";
             this.btnAgregarV.UseVisualStyleBackColor = false;
+            this.btnAgregarV.Click += new System.EventHandler(this.btnAgregarV_Click);
             // 
             // btnCancelarV
             // 
@@ -87,6 +88,7 @@
             this.btnCancelarV.TabIndex = 33;
             this.btnCancelarV.Text = "Cancelar venta";
             this.btnCancelarV.UseVisualStyleBackColor = false;
+            this.btnCancelarV.Click += new System.EventHandler(this.btnCancelarV_Click);
             // 
             // btnTerminarV
             // 
@@ -100,12 +102,13 @@
             this.btnTerminarV.TabIndex = 32;
             this.btnTerminarV.Text = "Terminar venta";
             this.btnTerminarV.UseVisualStyleBackColor = false;
+            this.btnTerminarV.Click += new System.EventHandler(this.btnTerminarV_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.ListaTarea);
             this.panel3.Controls.Add(this.txtVentaDV);
-            this.panel3.Controls.Add(this.txtTareaDV);
             this.panel3.Controls.Add(this.label);
             this.panel3.Controls.Add(this.txtDescripcion);
             this.panel3.Controls.Add(this.txtCantidadDV);
@@ -125,14 +128,6 @@
             this.txtVentaDV.ReadOnly = true;
             this.txtVentaDV.Size = new System.Drawing.Size(248, 22);
             this.txtVentaDV.TabIndex = 33;
-            // 
-            // txtTareaDV
-            // 
-            this.txtTareaDV.Location = new System.Drawing.Point(112, 54);
-            this.txtTareaDV.Name = "txtTareaDV";
-            this.txtTareaDV.ReadOnly = true;
-            this.txtTareaDV.Size = new System.Drawing.Size(248, 22);
-            this.txtTareaDV.TabIndex = 32;
             // 
             // label
             // 
@@ -216,6 +211,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Detalle de Venta";
             // 
+            // ListaTarea
+            // 
+            this.ListaTarea.FormattingEnabled = true;
+            this.ListaTarea.Location = new System.Drawing.Point(112, 52);
+            this.ListaTarea.Name = "ListaTarea";
+            this.ListaTarea.Size = new System.Drawing.Size(248, 24);
+            this.ListaTarea.TabIndex = 53;
+            // 
             // DetalleVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -244,11 +247,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtVentaDV;
-        private System.Windows.Forms.TextBox txtTareaDV;
         private System.Windows.Forms.Button btnAgregarV;
         private System.Windows.Forms.Button btnCancelarV;
         private System.Windows.Forms.Button btnTerminarV;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox ListaTarea;
     }
 }

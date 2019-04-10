@@ -16,10 +16,16 @@ namespace empleados
         {
             InitializeComponent();
         }
+        
 
-        private void ModCalle_TextChanged(object sender, EventArgs e)
+        private void btnGuardarDP_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegresarDP_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

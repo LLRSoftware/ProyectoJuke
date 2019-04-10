@@ -21,5 +21,10 @@ namespace Juke.Vistas
         {
 
         }
+
+        private void Detalle_Tarea_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -91,8 +91,8 @@ namespace empleados
             objeto.Fecha_ini1 = Emp_FecIni.Text;
             objeto.Fecha_Fin1 = Emp_FecFin.Text;
             dts.Ciudad1 = Emp_CiuNac.Text;
-            objeto.Pais_Na1 = Emp_PaisNac.Text;
-            objeto.Nacionalidad1 = Emp_Nacionalidad.Text;
+            // objeto.Pais_Na1 = Emp_PaisNac.Text; Campo borrado, no existe en la BD
+            //objeto.Nacionalidad1 = Emp_Nacionalidad.Text; Campo borrado, no existe en la BD
             objeto.CiudadNac1 = Emp_CiuNac.Text;
             objeto.Civil1 = Emp_EdoCivil.Text;
             objeto.EstadoNac1 = Emp_EdoNac.Text;

@@ -65,6 +65,7 @@ namespace Juke.Vistas
 
         private void btnGuardarV_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             detalleventa.Show();
         }
@@ -78,6 +79,11 @@ namespace Juke.Vistas
         private void Limpiar()
         {
             txtFormaPago.Text = "";
+        }
+
+        private void btnRegresarV_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -18,7 +18,6 @@ namespace Juke.Vistas
         conexiondb conexion = new conexiondb();
         Grids grids;
         Agregar_Tarea agregar_tarea = new Agregar_Tarea();
-        Modificar_Tarea modificar_tarea = new Modificar_Tarea();
 
         public Tareas()
         {

@@ -157,6 +157,7 @@
             this.Cerrar.TabIndex = 15;
             this.Cerrar.Text = "Cerrar";
             this.Cerrar.UseVisualStyleBackColor = false;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
             // Aceptar
             // 
@@ -170,6 +171,7 @@
             this.Aceptar.TabIndex = 14;
             this.Aceptar.Text = "Aceptar";
             this.Aceptar.UseVisualStyleBackColor = false;
+            this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
             // 
             // Form1
             // 

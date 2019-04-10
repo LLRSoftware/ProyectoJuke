@@ -10,7 +10,7 @@ namespace Juke.nueva
 {
     class conexiondb
     {
-        string cadena = "Data Source=ROMEROCHIPMUNK;Initial Catalog=Juke;Integrated Security=True";
+        string cadena = "Data Source=WATCHEDXXLEONXX;Initial Catalog=Juke;Integrated Security=True";
         public SqlConnection conectar = new SqlConnection();
 
         public conexiondb()

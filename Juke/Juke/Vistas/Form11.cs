@@ -38,8 +38,6 @@ namespace login
 
         }
 
-
-
         public void login()
         {
             datos.Usuario = txtUsuario.Text; // Se guarda la información en la caja de texto en las variables ...
@@ -57,13 +55,6 @@ namespace login
                 MessageBox.Show("El usuario o contraseña son erroneos, favor de ingresar nuevamente");
                 //Mensaje de texto por ingresasr los datos de manera erronea
             }
-
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

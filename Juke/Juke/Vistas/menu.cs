@@ -36,8 +36,7 @@ namespace menu
         DetalleVenta detalleVenta = new DetalleVenta();
         Gastos gastos = new Gastos();
         Agregar_Material agregar_material = new Agregar_Material();
-
-        Inventario inventario = new Inventario();
+        
         Material material = new Material();
         Nomina nomina = new Nomina();
         Proveedores proveedores = new Proveedores();

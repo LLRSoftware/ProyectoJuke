@@ -42,5 +42,10 @@ namespace Juke.Vistas
         {
             agregar_compra.Show();
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

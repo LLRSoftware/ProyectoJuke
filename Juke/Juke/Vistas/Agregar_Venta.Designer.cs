@@ -81,6 +81,7 @@
             this.btnRegresarV.TabIndex = 55;
             this.btnRegresarV.Text = "Regresar";
             this.btnRegresarV.UseVisualStyleBackColor = false;
+            this.btnRegresarV.Click += new System.EventHandler(this.btnRegresarV_Click);
             // 
             // btnCancelarV
             // 

@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.PanelAMaterial = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCancelarM = new System.Windows.Forms.Button();
             this.btnGuardarM = new System.Windows.Forms.Button();
             this.dgvCompra = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.ListaProveedorM = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNombreM = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,11 +48,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.ListaProveedorM = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.PanelAMaterial.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelAMaterial
@@ -69,26 +69,6 @@
             this.PanelAMaterial.Name = "PanelAMaterial";
             this.PanelAMaterial.Size = new System.Drawing.Size(788, 537);
             this.PanelAMaterial.TabIndex = 8;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(802, 48);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(8, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Material";
             // 
             // btnCancelarM
             // 
@@ -115,6 +95,7 @@
             this.btnGuardarM.TabIndex = 22;
             this.btnGuardarM.Text = "Guardar";
             this.btnGuardarM.UseVisualStyleBackColor = false;
+            this.btnGuardarM.Click += new System.EventHandler(this.btnGuardarM_Click);
             // 
             // dgvCompra
             // 
@@ -147,6 +128,14 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(755, 214);
             this.panel4.TabIndex = 20;
+            // 
+            // ListaProveedorM
+            // 
+            this.ListaProveedorM.FormattingEnabled = true;
+            this.ListaProveedorM.Location = new System.Drawing.Point(133, 149);
+            this.ListaProveedorM.Name = "ListaProveedorM";
+            this.ListaProveedorM.Size = new System.Drawing.Size(610, 24);
+            this.ListaProveedorM.TabIndex = 16;
             // 
             // label6
             // 
@@ -276,13 +265,25 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Listado de los materiales";
             // 
-            // ListaProveedorM
+            // panel2
             // 
-            this.ListaProveedorM.FormattingEnabled = true;
-            this.ListaProveedorM.Location = new System.Drawing.Point(133, 149);
-            this.ListaProveedorM.Name = "ListaProveedorM";
-            this.ListaProveedorM.Size = new System.Drawing.Size(610, 24);
-            this.ListaProveedorM.TabIndex = 16;
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(802, 48);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(8, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Material";
             // 
             // Material
             // 
@@ -294,11 +295,11 @@
             this.Text = "Material";
             this.PanelAMaterial.ResumeLayout(false);
             this.PanelAMaterial.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -16,9 +16,18 @@ namespace Juke.Vistas
     {
         conexiondb conexion = new conexiondb();
 
+        String Nombre;
+        String unidadMedida;
+        int Existencias;
+        String Marca;
+        decimal Precio;
+        int Proveedor;
+
+
         public Agregar_Material()
         {
             InitializeComponent();
+            llenaProveedor(ListaProveedores);
         }
 
         private void Agregar_Material_Load(object sender, EventArgs e)
@@ -26,27 +35,75 @@ namespace Juke.Vistas
 
         }
 
-        public void llenaTarea(ComboBox bc)
+        
+
+        public void llenaProveedor(ComboBox bc)
         {
-            conexion.abrir();
             try
             {
-                String Sql = "Select Nombre, Id_Tarea from Tarea";
+                conexion.abrir();
+                String Sql = "SELECT Nombre_Contac, Id_Proveedor from Proveedor";
                 SqlCommand leer = new SqlCommand(Sql, conexion.conectar);
                 SqlDataReader conn = leer.ExecuteReader();
                 while (conn.Read())
                 {
-                    bc.Items.Add(conn["Nombre"].ToString());
+                    bc.Items.Add(conn["Nombre_Contac"].ToString());
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al conectar con la bd " + ex);
+                MessageBox.Show("error al conectar con la bd " + ex);
             }
             conexion.cerrar();
         }
 
+        private void btnGuardarM_Click(object sender, EventArgs e)
+        {
+            Nombre = txtNombreMat.Text;
+            unidadMedida = txtUnidad_Medida.Text;
+            Existencias = Convert.ToInt32(txtExistencias.Text);
+            Marca = txtMarca.Text;
+            Precio = Convert.ToDecimal(txtPrecio.Text);
+            Proveedor = Convert.ToInt32(ListaProveedores.ValueMember+1);
+
+            try
+            {
+                
+                conexion.abrir();
+                String Consulta = "INSERT INTO Material (Nombre, Marca, Precio, Existencias, Uni_Medida, Id_Proveedor) " +
+                    "VALUES('"+Nombre+"', '"+Marca+"', "+Precio+", "+Existencias+", '"+unidadMedida+"', "+Proveedor+"); ";
+                SqlCommand command = new SqlCommand(Consulta, conexion.conectar);
+                SqlDataReader reader = command.ExecuteReader();
+                conexion.cerrar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            Limpiar();
+
+        }
+
+        private void btnCancelarM_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void btnRegresarM_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+            this.Hide();
+        }
+
+        private void Limpiar()
+        {
+            txtNombreMat.Text = "";
+            txtUnidad_Medida.Text = "";
+            txtMarca.Text = "";
+            txtPrecio.Text = "";
+
+        }
     }
 }
 
@@ -109,23 +166,23 @@ namespace Juke.Vistas
            
         }
 
-        public void llenaProveedor(ComboBox bc)
+        public void llenaTarea(ComboBox bc)
         {
             conexion.abrir();
             try
             {
-                String Sql = "Select Nombre, Id_Proveedor from Proveedor";
+                String Sql = "Select Nombre, Id_Tarea from Tarea";
                 SqlCommand leer = new SqlCommand(Sql, conexion.conectar);
                 SqlDataReader conn = leer.ExecuteReader();
                 while (conn.Read())
                 {
-                    bc.Items.Add(conn["Nombre_Contac"].ToString());
+                    bc.Items.Add(conn["Nombre"].ToString());
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error al conectar con la bd " + ex);
+                MessageBox.Show("Error al conectar con la bd " + ex);
             }
             conexion.cerrar();
         }

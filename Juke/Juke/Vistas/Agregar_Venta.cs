@@ -15,11 +15,21 @@ namespace Juke.Vistas
 {
     public partial class Agregar_Venta : Form
     {
+        DetalleVenta detalleventa = new DetalleVenta();
         conexiondb conexion = new conexiondb();
+        String SerieS = "";
+        String Fecha = "";
+        String FormaPago = "";
+        int Cliente = 0;
+        decimal Importe = 0;
 
         public Agregar_Venta()
         {
             InitializeComponent();
+            llenaCliente(ListaClientes);
+            DateTime fecha = DateTime.Now;
+            txtSerie.Text = fecha.ToString("HHmmss");
+            SerieS = txtSerie.Text;
         }
 
         private void Agregar_Venta_Load(object sender, EventArgs e)
@@ -37,7 +47,7 @@ namespace Juke.Vistas
             conexion.abrir();
             try
             {
-                String Sql = "Select Nombre, Id_Cliente from Cliente";
+                String Sql = "SELECT Nombre, Id_Cliente from Cliente";
                 SqlCommand leer = new SqlCommand(Sql, conexion.conectar);
                 SqlDataReader conn = leer.ExecuteReader();
                 while (conn.Read())
@@ -53,6 +63,21 @@ namespace Juke.Vistas
             conexion.cerrar();
         }
 
+        private void btnGuardarV_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            detalleventa.Show();
+        }
 
+        private void btnCancelarV_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+
+        private void Limpiar()
+        {
+            txtFormaPago.Text = "";
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresarM = new System.Windows.Forms.Button();
             this.btnCancelarM = new System.Windows.Forms.Button();
             this.btnGuardarM = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,7 +51,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnRegresarM = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -71,6 +71,20 @@
             this.panel1.Size = new System.Drawing.Size(783, 536);
             this.panel1.TabIndex = 0;
             // 
+            // btnRegresarM
+            // 
+            this.btnRegresarM.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarM.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarM.Location = new System.Drawing.Point(390, 468);
+            this.btnRegresarM.Name = "btnRegresarM";
+            this.btnRegresarM.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarM.TabIndex = 25;
+            this.btnRegresarM.Text = "Regresar";
+            this.btnRegresarM.UseVisualStyleBackColor = false;
+            this.btnRegresarM.Click += new System.EventHandler(this.btnRegresarM_Click);
+            // 
             // btnCancelarM
             // 
             this.btnCancelarM.BackColor = System.Drawing.Color.SteelBlue;
@@ -83,6 +97,7 @@
             this.btnCancelarM.TabIndex = 17;
             this.btnCancelarM.Text = "Cancelar";
             this.btnCancelarM.UseVisualStyleBackColor = false;
+            this.btnCancelarM.Click += new System.EventHandler(this.btnCancelarM_Click);
             // 
             // btnGuardarM
             // 
@@ -93,9 +108,10 @@
             this.btnGuardarM.Location = new System.Drawing.Point(680, 468);
             this.btnGuardarM.Name = "btnGuardarM";
             this.btnGuardarM.Size = new System.Drawing.Size(90, 36);
-            this.btnGuardarM.TabIndex = 16;
+            this.btnGuardarM.TabIndex = 6;
             this.btnGuardarM.Text = "Guardar";
             this.btnGuardarM.UseVisualStyleBackColor = false;
+            this.btnGuardarM.Click += new System.EventHandler(this.btnGuardarM_Click);
             // 
             // panel2
             // 
@@ -135,6 +151,7 @@
             this.txtExistencias.ReadOnly = true;
             this.txtExistencias.Size = new System.Drawing.Size(236, 22);
             this.txtExistencias.TabIndex = 14;
+            this.txtExistencias.Text = "0";
             // 
             // label3
             // 
@@ -151,14 +168,14 @@
             this.txtPrecio.Location = new System.Drawing.Point(144, 156);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(542, 22);
-            this.txtPrecio.TabIndex = 10;
+            this.txtPrecio.TabIndex = 4;
             // 
             // txtUnidad_Medida
             // 
             this.txtUnidad_Medida.Location = new System.Drawing.Point(144, 84);
             this.txtUnidad_Medida.Name = "txtUnidad_Medida";
             this.txtUnidad_Medida.Size = new System.Drawing.Size(236, 22);
-            this.txtUnidad_Medida.TabIndex = 8;
+            this.txtUnidad_Medida.TabIndex = 2;
             // 
             // label1
             // 
@@ -175,14 +192,14 @@
             this.txtMarca.Location = new System.Drawing.Point(144, 121);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(593, 22);
-            this.txtMarca.TabIndex = 7;
+            this.txtMarca.TabIndex = 3;
             // 
             // txtNombreMat
             // 
             this.txtNombreMat.Location = new System.Drawing.Point(144, 44);
             this.txtNombreMat.Name = "txtNombreMat";
             this.txtNombreMat.Size = new System.Drawing.Size(593, 22);
-            this.txtNombreMat.TabIndex = 5;
+            this.txtNombreMat.TabIndex = 1;
             // 
             // label11
             // 
@@ -220,9 +237,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(6, 4);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 17);
+            this.label7.Size = new System.Drawing.Size(219, 17);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Revise los datos de la venta";
+            this.label7.Text = "Inserte los datos del material";
             // 
             // panel5
             // 
@@ -241,7 +258,7 @@
             this.ListaProveedores.Location = new System.Drawing.Point(144, 44);
             this.ListaProveedores.Name = "ListaProveedores";
             this.ListaProveedores.Size = new System.Drawing.Size(591, 24);
-            this.ListaProveedores.TabIndex = 41;
+            this.ListaProveedores.TabIndex = 5;
             // 
             // label19
             // 
@@ -282,19 +299,6 @@
             this.label4.Size = new System.Drawing.Size(172, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Agregar Material";
-            // 
-            // btnRegresarM
-            // 
-            this.btnRegresarM.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRegresarM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresarM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarM.ForeColor = System.Drawing.Color.White;
-            this.btnRegresarM.Location = new System.Drawing.Point(390, 468);
-            this.btnRegresarM.Name = "btnRegresarM";
-            this.btnRegresarM.Size = new System.Drawing.Size(90, 36);
-            this.btnRegresarM.TabIndex = 25;
-            this.btnRegresarM.Text = "Regresar";
-            this.btnRegresarM.UseVisualStyleBackColor = false;
             // 
             // Agregar_Material
             // 

@@ -14,7 +14,7 @@ namespace Juke.Vistas
 {
     public partial class Inventario : Form
     {
-        String script = "SELECT Nombre, Marca, Cantidad FROM material";
+        String script = "SELECT Nombre, Marca FROM material";
         conexiondb conexiondb = new conexiondb();
         Grids grids;
 

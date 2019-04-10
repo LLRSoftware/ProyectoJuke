@@ -26,13 +26,13 @@ namespace menu
         empleados.modusuario cambio = new empleados.modusuario();
         EncontrarPersonal otra = new EncontrarPersonal();
         Venta venta = new Venta();
-        Ajustar_Inventario ajustar_Inventario = new Ajustar_Inventario();
         Asignacion.Emp_Asg_Fij asignacion = new Asignacion.Emp_Asg_Fij(1);
         Captura_Nomina captura_Nomina = new Captura_Nomina();
         Clientes clientes = new Clientes();
         Agregar_Compra agregar_compra = new Agregar_Compra();
         Compra compra = new Compra();
         DetalleCompra detalleCompra = new DetalleCompra();
+        Agregar_Venta agregar_venta = new Agregar_Venta();
         DetalleVenta detalleVenta = new DetalleVenta();
         Gastos gastos = new Gastos();
         Agregar_Material agregar_material = new Agregar_Material();
@@ -100,7 +100,7 @@ namespace menu
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ajustar_Inventario.Show();
+            agregar_material.Show();
         }
 
         private void altaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace menu
 
         private void realizarVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            agregar_venta.Show();
         }
 
         private void consultarVentasToolStripMenuItem_Click(object sender, EventArgs e)

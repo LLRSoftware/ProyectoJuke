@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresarV = new System.Windows.Forms.Button();
             this.btnCancelarV = new System.Windows.Forms.Button();
             this.btnGuardarV = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,7 +49,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRegresarV = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -69,6 +69,19 @@
             this.panel1.Size = new System.Drawing.Size(783, 535);
             this.panel1.TabIndex = 0;
             // 
+            // btnRegresarV
+            // 
+            this.btnRegresarV.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarV.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarV.Location = new System.Drawing.Point(367, 465);
+            this.btnRegresarV.Name = "btnRegresarV";
+            this.btnRegresarV.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarV.TabIndex = 55;
+            this.btnRegresarV.Text = "Regresar";
+            this.btnRegresarV.UseVisualStyleBackColor = false;
+            // 
             // btnCancelarV
             // 
             this.btnCancelarV.BackColor = System.Drawing.Color.SteelBlue;
@@ -81,6 +94,7 @@
             this.btnCancelarV.TabIndex = 53;
             this.btnCancelarV.Text = "Cancelar";
             this.btnCancelarV.UseVisualStyleBackColor = false;
+            this.btnCancelarV.Click += new System.EventHandler(this.btnCancelarV_Click);
             // 
             // btnGuardarV
             // 
@@ -91,9 +105,10 @@
             this.btnGuardarV.Location = new System.Drawing.Point(680, 465);
             this.btnGuardarV.Name = "btnGuardarV";
             this.btnGuardarV.Size = new System.Drawing.Size(90, 36);
-            this.btnGuardarV.TabIndex = 52;
+            this.btnGuardarV.TabIndex = 4;
             this.btnGuardarV.Text = "Guardar";
             this.btnGuardarV.UseVisualStyleBackColor = false;
+            this.btnGuardarV.Click += new System.EventHandler(this.btnGuardarV_Click);
             // 
             // panel3
             // 
@@ -131,7 +146,7 @@
             this.txtImporte.Location = new System.Drawing.Point(164, 244);
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.Size = new System.Drawing.Size(500, 22);
-            this.txtImporte.TabIndex = 53;
+            this.txtImporte.TabIndex = 3;
             // 
             // label6
             // 
@@ -159,7 +174,7 @@
             this.ListaClientes.Location = new System.Drawing.Point(164, 180);
             this.ListaClientes.Name = "ListaClientes";
             this.ListaClientes.Size = new System.Drawing.Size(551, 24);
-            this.ListaClientes.TabIndex = 50;
+            this.ListaClientes.TabIndex = 2;
             this.ListaClientes.SelectedIndexChanged += new System.EventHandler(this.ListaClientes_SelectedIndexChanged);
             // 
             // txtFecha
@@ -195,7 +210,7 @@
             this.txtFormaPago.Location = new System.Drawing.Point(164, 128);
             this.txtFormaPago.Name = "txtFormaPago";
             this.txtFormaPago.Size = new System.Drawing.Size(551, 22);
-            this.txtFormaPago.TabIndex = 46;
+            this.txtFormaPago.TabIndex = 1;
             // 
             // label3
             // 
@@ -265,19 +280,6 @@
             this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Agregar Venta";
-            // 
-            // btnRegresarV
-            // 
-            this.btnRegresarV.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRegresarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresarV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarV.ForeColor = System.Drawing.Color.White;
-            this.btnRegresarV.Location = new System.Drawing.Point(367, 465);
-            this.btnRegresarV.Name = "btnRegresarV";
-            this.btnRegresarV.Size = new System.Drawing.Size(90, 36);
-            this.btnRegresarV.TabIndex = 55;
-            this.btnRegresarV.Text = "Regresar";
-            this.btnRegresarV.UseVisualStyleBackColor = false;
             // 
             // Agregar_Venta
             // 

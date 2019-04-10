@@ -78,6 +78,7 @@
             this.btnRegresarC.TabIndex = 24;
             this.btnRegresarC.Text = "Regresar";
             this.btnRegresarC.UseVisualStyleBackColor = false;
+            this.btnRegresarC.Click += new System.EventHandler(this.btnRegresarC_Click);
             // 
             // btnCancelarC
             // 
@@ -91,6 +92,7 @@
             this.btnCancelarC.TabIndex = 23;
             this.btnCancelarC.Text = "Cancelar";
             this.btnCancelarC.UseVisualStyleBackColor = false;
+            this.btnCancelarC.Click += new System.EventHandler(this.btnCancelarC_Click);
             // 
             // btnGuardarC
             // 
@@ -104,6 +106,7 @@
             this.btnGuardarC.TabIndex = 22;
             this.btnGuardarC.Text = "Guardar";
             this.btnGuardarC.UseVisualStyleBackColor = false;
+            this.btnGuardarC.Click += new System.EventHandler(this.btnGuardarC_Click);
             // 
             // panel3
             // 

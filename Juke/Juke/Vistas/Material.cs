@@ -14,6 +14,10 @@ namespace Juke.Vistas
 {
     public partial class Material : Form
     {
+        private void btnGuardarM_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
         //public void guardar()

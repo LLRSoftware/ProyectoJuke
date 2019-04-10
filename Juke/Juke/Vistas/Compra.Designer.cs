@@ -126,7 +126,7 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(15, 238);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(755, 194);
+            this.panel4.Size = new System.Drawing.Size(755, 214);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -135,7 +135,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(688, 153);
+            this.label6.Location = new System.Drawing.Point(688, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 18);
             this.label6.TabIndex = 15;
@@ -180,14 +180,15 @@
             // txtMaterialC
             // 
             this.txtMaterialC.Location = new System.Drawing.Point(133, 110);
+            this.txtMaterialC.Multiline = true;
             this.txtMaterialC.Name = "txtMaterialC";
-            this.txtMaterialC.Size = new System.Drawing.Size(600, 22);
+            this.txtMaterialC.Size = new System.Drawing.Size(600, 48);
             this.txtMaterialC.TabIndex = 5;
             this.txtMaterialC.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtImporteC
             // 
-            this.txtImporteC.Location = new System.Drawing.Point(133, 150);
+            this.txtImporteC.Location = new System.Drawing.Point(133, 173);
             this.txtImporteC.Name = "txtImporteC";
             this.txtImporteC.Size = new System.Drawing.Size(549, 22);
             this.txtImporteC.TabIndex = 10;
@@ -206,7 +207,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
-            this.label4.Location = new System.Drawing.Point(15, 153);
+            this.label4.Location = new System.Drawing.Point(15, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 9;

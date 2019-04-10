@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
             objeto.Colonia1 = Emp_DP_Col.Text;
             objeto.Numero_Int1 = int.Parse(Emp_DP_NumInt.Text);
             objeto.Numero_Ext1 = int.Parse(Emp_DP_NumExt.Text);
-            objeto.Pais1 = Emp_DP_Pais.Text;
+            //objeto.Pais1 = Emp_DP_Pais.Text;
             objeto.Telefono_P = Emp_DP_TelP.Text;
             objeto.Telefono_R = Emp_DP_TelR.Text;
 

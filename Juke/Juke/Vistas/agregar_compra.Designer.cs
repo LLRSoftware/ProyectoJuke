@@ -29,9 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegresarC = new System.Windows.Forms.Button();
             this.btnCancelarC = new System.Windows.Forms.Button();
             this.btnGuardarC = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtUsuarioC = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtGastoC = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtImporteC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFechaCompra = new System.Windows.Forms.TextBox();
@@ -51,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateGray;
+            this.panel1.Controls.Add(this.btnRegresarC);
             this.panel1.Controls.Add(this.btnCancelarC);
             this.panel1.Controls.Add(this.btnGuardarC);
             this.panel1.Controls.Add(this.panel3);
@@ -60,13 +66,26 @@
             this.panel1.Size = new System.Drawing.Size(783, 537);
             this.panel1.TabIndex = 0;
             // 
+            // btnRegresarC
+            // 
+            this.btnRegresarC.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegresarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarC.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarC.Location = new System.Drawing.Point(421, 463);
+            this.btnRegresarC.Name = "btnRegresarC";
+            this.btnRegresarC.Size = new System.Drawing.Size(90, 36);
+            this.btnRegresarC.TabIndex = 24;
+            this.btnRegresarC.Text = "Regresar";
+            this.btnRegresarC.UseVisualStyleBackColor = false;
+            // 
             // btnCancelarC
             // 
             this.btnCancelarC.BackColor = System.Drawing.Color.SteelBlue;
             this.btnCancelarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarC.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarC.Location = new System.Drawing.Point(522, 463);
+            this.btnCancelarC.Location = new System.Drawing.Point(555, 463);
             this.btnCancelarC.Name = "btnCancelarC";
             this.btnCancelarC.Size = new System.Drawing.Size(90, 36);
             this.btnCancelarC.TabIndex = 23;
@@ -89,6 +108,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.txtUsuarioC);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.txtGastoC);
+            this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.txtImporteC);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.txtFechaCompra);
@@ -103,10 +126,47 @@
             this.panel3.Size = new System.Drawing.Size(749, 240);
             this.panel3.TabIndex = 21;
             // 
+            // txtUsuarioC
+            // 
+            this.txtUsuarioC.Location = new System.Drawing.Point(538, 149);
+            this.txtUsuarioC.Name = "txtUsuarioC";
+            this.txtUsuarioC.ReadOnly = true;
+            this.txtUsuarioC.Size = new System.Drawing.Size(177, 22);
+            this.txtUsuarioC.TabIndex = 35;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
+            this.label6.Location = new System.Drawing.Point(418, 149);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 20);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Usuario";
+            // 
+            // txtGastoC
+            // 
+            this.txtGastoC.Location = new System.Drawing.Point(149, 149);
+            this.txtGastoC.Name = "txtGastoC";
+            this.txtGastoC.ReadOnly = true;
+            this.txtGastoC.Size = new System.Drawing.Size(241, 22);
+            this.txtGastoC.TabIndex = 33;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F);
+            this.label7.Location = new System.Drawing.Point(18, 149);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 20);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Gasto";
+            // 
             // txtImporteC
             // 
             this.txtImporteC.Location = new System.Drawing.Point(538, 104);
             this.txtImporteC.Name = "txtImporteC";
+            this.txtImporteC.ReadOnly = true;
             this.txtImporteC.Size = new System.Drawing.Size(177, 22);
             this.txtImporteC.TabIndex = 31;
             // 
@@ -124,6 +184,7 @@
             // 
             this.txtFechaCompra.Location = new System.Drawing.Point(538, 58);
             this.txtFechaCompra.Name = "txtFechaCompra";
+            this.txtFechaCompra.ReadOnly = true;
             this.txtFechaCompra.Size = new System.Drawing.Size(177, 22);
             this.txtFechaCompra.TabIndex = 29;
             // 
@@ -141,6 +202,7 @@
             // 
             this.txtClaveC.Location = new System.Drawing.Point(149, 58);
             this.txtClaveC.Name = "txtClaveC";
+            this.txtClaveC.ReadOnly = true;
             this.txtClaveC.Size = new System.Drawing.Size(241, 22);
             this.txtClaveC.TabIndex = 27;
             // 
@@ -169,6 +231,7 @@
             // 
             this.txtFolioCompra.Location = new System.Drawing.Point(149, 104);
             this.txtFolioCompra.Name = "txtFolioCompra";
+            this.txtFolioCompra.ReadOnly = true;
             this.txtFolioCompra.Size = new System.Drawing.Size(241, 22);
             this.txtFolioCompra.TabIndex = 24;
             // 
@@ -238,5 +301,10 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtFolioCompra;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnRegresarC;
+        private System.Windows.Forms.TextBox txtUsuarioC;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtGastoC;
+        private System.Windows.Forms.Label label7;
     }
 }

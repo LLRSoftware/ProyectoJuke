@@ -52,11 +52,11 @@ namespace Asignacion
             depa = Emp_Asi_Depto.Text;
             objeto.Escolaridad1 = Emp_Asg_Esc.Text;
             objeto.Ubicacion1 = Emp_Asg_Ubi.Text;
-            objeto.Categoria1 = Emp_Asg_Cat.Text;
+            //objeto.Categoria1 = Emp_Asg_Cat.Text; Se borró el campo en la BD
             objeto.Puesto1 = Emp_Asg_Pues.Text;
             objeto.Tipo_Nomina1 = Emp_Asg_Nomi.Text;
-            Estado = Cbo_Asi_Emp.Text;
-            objeto.Vacante1 = Emp_Asg_Vac.Text;
+            //Estado = Cbo_Asi_Emp.Text; Se borró el campo en la BD
+            //objeto.Vacante1 = Emp_Asg_Vac.Text; Se borró el campo en la BD
             objeto.Supervisor1 = Emp_Asg_Pues.Text;
             objeto.Plaza1 = Emp_Asi_Plaza.Text;
 
@@ -78,8 +78,8 @@ namespace Asignacion
             guarda.llenaEstudio(Emp_Asg_Esc);
             guarda.llenaNomina(Emp_Asg_Nomi);
             guarda.llenaPlaza(Emp_Asi_Plaza);
-            guarda.llenaorganiza(Emp_Asi_Org);
-            guarda.llenaEdo(Cbo_Asi_Emp);
+            //guarda.llenaorganiza(Emp_Asi_Org); Se borró el campo en la BD
+            //guarda.llenaEdo(Cbo_Asi_Emp); Se borró el campo en la BD
         }
     }
 }

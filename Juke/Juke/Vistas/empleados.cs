@@ -19,6 +19,7 @@ namespace empleados
     {
         
         Emple objeto = new Emple(); // Variable "Emple" de la clase Model 
+        datosPersonal datospersonal = new datosPersonal(1);
         Datos_Personales dts = new Datos_Personales(); //Variable "Datos_Personales"  de la clase Model
        
         empleado inser = new empleado();
@@ -81,6 +82,33 @@ namespace empleados
         private void btn_Emp_Sig_Click(object sender, EventArgs e) // Boton siguiente, obtiene los datos de la caja de texto de la vista y realiza el Insert a la BD
         {
             insertar();
+            Limpiar();
+            this.Hide();
+        }
+
+        private void btnRegresarE_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Limpiar();
+        }
+
+        private void Limpiar()
+        {
+            Emp_ApeMat.Text = "";
+            Emp_ApePat.Text = "";
+            Emp_CiuNac.Text = "";
+            Emp_CURP.Text = "";
+            Emp_Edad.Text = "";
+            Emp_EdoCivil.Text = "";
+            Emp_EdoNac.Text = "";
+            Emp_FecFin.Text = "";
+            Emp_NomPri.Text = "";
+            Emp_RFC.Text = "";
+            Emp_Sexo.Text = "";
+        }
+
+        private void Emp_EdoCivil_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }    

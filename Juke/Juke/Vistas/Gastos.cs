@@ -18,7 +18,7 @@ namespace Juke.Vistas
         String script = "SELECT g.Fecha, c.Folio, c.Importe FROM Gastos AS g INNER JOIN Compra AS c ON g.Id_Gasto = c.Id_Gasto";
         conexiondb conexiondb = new conexiondb();
         Grids grids;
-        Nomina nomina = new Nomina();
+        Captura_Nomina captura_nomina = new Captura_Nomina();
         Agregar_Compra agregar_compra = new Agregar_Compra();
 
         public Gastos()
@@ -35,8 +35,8 @@ namespace Juke.Vistas
 
         private void btnNomina_Click(object sender, EventArgs e)
         {
-            nomina.Show();
             this.Hide();
+            captura_nomina.Show();
         }
 
         private void btnCompra_Click(object sender, EventArgs e)

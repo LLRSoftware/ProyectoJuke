@@ -96,6 +96,7 @@
             this.btnRegresarE.TabIndex = 75;
             this.btnRegresarE.Text = "Regresar";
             this.btnRegresarE.UseVisualStyleBackColor = false;
+            this.btnRegresarE.Click += new System.EventHandler(this.btnRegresarE_Click);
             // 
             // panel5
             // 
@@ -212,6 +213,7 @@
             this.Emp_EdoCivil.Name = "Emp_EdoCivil";
             this.Emp_EdoCivil.Size = new System.Drawing.Size(333, 24);
             this.Emp_EdoCivil.TabIndex = 64;
+            this.Emp_EdoCivil.SelectedIndexChanged += new System.EventHandler(this.Emp_EdoCivil_SelectedIndexChanged);
             // 
             // label15
             // 

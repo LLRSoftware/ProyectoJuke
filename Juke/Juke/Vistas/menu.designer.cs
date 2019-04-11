@@ -57,9 +57,16 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvTareasRecientes = new System.Windows.Forms.DataGridView();
             this.Cuerpo = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuInicial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareasRecientes)).BeginInit();
             this.Cuerpo.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuInicial
@@ -128,14 +135,14 @@
             // altaToolStripMenuItem
             // 
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
             // cancelaciónToolStripMenuItem
             // 
             this.cancelaciónToolStripMenuItem.Name = "cancelaciónToolStripMenuItem";
-            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(184, 28);
+            this.cancelaciónToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.cancelaciónToolStripMenuItem.Text = "Cancelación";
             // 
             // usuariosToolStripMenuItem
@@ -290,20 +297,63 @@
             // 
             // dgvTareasRecientes
             // 
+            this.dgvTareasRecientes.BackgroundColor = System.Drawing.Color.White;
             this.dgvTareasRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTareasRecientes.Location = new System.Drawing.Point(254, 234);
+            this.dgvTareasRecientes.Location = new System.Drawing.Point(12, 225);
             this.dgvTareasRecientes.Name = "dgvTareasRecientes";
             this.dgvTareasRecientes.RowTemplate.Height = 24;
-            this.dgvTareasRecientes.Size = new System.Drawing.Size(395, 232);
+            this.dgvTareasRecientes.Size = new System.Drawing.Size(349, 232);
             this.dgvTareasRecientes.TabIndex = 1;
             // 
             // Cuerpo
             // 
+            this.Cuerpo.BackColor = System.Drawing.Color.SlateGray;
+            this.Cuerpo.Controls.Add(this.panel1);
             this.Cuerpo.Controls.Add(this.dgvTareasRecientes);
             this.Cuerpo.Location = new System.Drawing.Point(0, 34);
             this.Cuerpo.Name = "Cuerpo";
             this.Cuerpo.Size = new System.Drawing.Size(878, 474);
             this.Cuerpo.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(455, 225);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(377, 232);
+            this.panel1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Juke.Properties.Resources.LogoJuke;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(172, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(27, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 45);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Juke";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(208, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(152, 100);
+            this.panel2.TabIndex = 5;
             // 
             // menu
             // 
@@ -319,6 +369,10 @@
             this.menuInicial.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareasRecientes)).EndInit();
             this.Cuerpo.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,6 +409,10 @@
         private System.Windows.Forms.ToolStripMenuItem consultarGastosToolStripMenuItem;
         private System.Windows.Forms.Panel Cuerpo;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         Emp_Asg_Fij asig; // Variable para llamar la vista Asignación
         Datos_Personales objeto = new Datos_Personales();
         dtPersonales procesos = new dtPersonales();
+        
 
         Emple otros = new Emple();
 
@@ -37,7 +38,9 @@ namespace WindowsFormsApp1
  
         private void btn_DP_sig_Click(object sender, EventArgs e) // Boton siguiente para guardar los datos de las cajas de texto
         {
+
             insertaDatos();
+            Limpiar();
         }
 
 
@@ -68,7 +71,19 @@ namespace WindowsFormsApp1
             }
         }
         
-        private void btn_DP_sig_Click_1(object sender, EventArgs e)
+
+        private void btnRegresarDP_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+            this.Hide();
+        }
+
+        private void btnCancelarDP_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void Limpiar()
         {
 
         }

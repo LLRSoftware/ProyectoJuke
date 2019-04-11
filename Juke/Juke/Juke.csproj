@@ -231,12 +231,6 @@
     <Compile Include="Vistas\modusuario.designer.cs">
       <DependentUpon>modusuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Nomina.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Nomina.Designer.cs">
-      <DependentUpon>Nomina.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\nuevouser.cs">
       <SubType>Form</SubType>
     </Compile>

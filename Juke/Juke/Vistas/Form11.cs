@@ -56,5 +56,10 @@ namespace login
                 //Mensaje de texto por ingresasr los datos de manera erronea
             }
         }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

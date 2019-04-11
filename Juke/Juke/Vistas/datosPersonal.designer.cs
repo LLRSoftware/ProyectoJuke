@@ -89,6 +89,7 @@
             this.btnRegresarDP.TabIndex = 85;
             this.btnRegresarDP.Text = "Regresar";
             this.btnRegresarDP.UseVisualStyleBackColor = false;
+            this.btnRegresarDP.Click += new System.EventHandler(this.btnRegresarDP_Click);
             // 
             // btnCancelarDP
             // 
@@ -102,6 +103,7 @@
             this.btnCancelarDP.TabIndex = 84;
             this.btnCancelarDP.Text = "Cancelar";
             this.btnCancelarDP.UseVisualStyleBackColor = false;
+            this.btnCancelarDP.Click += new System.EventHandler(this.btnCancelarDP_Click);
             // 
             // pictureBox1
             // 
@@ -148,7 +150,7 @@
             this.btn_DP_sig.TabIndex = 80;
             this.btn_DP_sig.Text = "Siguiente";
             this.btn_DP_sig.UseVisualStyleBackColor = false;
-            this.btn_DP_sig.Click += new System.EventHandler(this.btn_DP_sig_Click_1);
+            this.btn_DP_sig.Click += new System.EventHandler(this.btn_DP_sig_Click);
             // 
             // panel3
             // 

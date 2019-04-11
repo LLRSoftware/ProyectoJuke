@@ -45,8 +45,8 @@ namespace empleados.Controller
                 try
                 {
 
-                    String sql = "insert into empleado(Nombre,Apellido_P,Apellido_M,RFC,No_AFILIACION,Fecha_Inicio,Fecha_Final,CURP,Id_Departamento) " +
-                    "values('"+nombre+"','"+apellidoP+"', '"+apellidoM+"', '"+rfc+"', "+afiliacion+", '"+fecha_actual+"', '"+fecha_actual+"','"+curp+"',"+departamento+" ); ";
+                    String sql = "insert into empleado(Nombre,Apellido_P,Apellido_M,RFC,Fecha_Inicio,Fecha_Final,CURP,EdoCiv,Sexo,FecNac,CiuNac,EdoNac) " +
+                    "values('"+nombre+"','"+apellidoP+"', '"+apellidoM+"', '"+rfc+"', '"+fecha_actual+"', '"+fecha_actual+"','"+curp+"','Soltero','Femenino','1992-11-04','LEON','GUANAJUATO'); ";
 
                     SqlCommand insert = new SqlCommand(sql, nueva.conectar);
                     insert.ExecuteNonQuery();

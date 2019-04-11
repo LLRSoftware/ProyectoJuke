@@ -37,7 +37,6 @@ namespace menu
         Gastos gastos = new Gastos();
         Agregar_Material agregar_material = new Agregar_Material();
         Captura_Nomina captura_nomina = new Captura_Nomina();
-        Nomina nomina = new Nomina();
         Proveedores proveedores = new Proveedores();
         Agregar_Material agregar_Material = new Agregar_Material();
         Agregar_Tarea agregar_Tarea = new Agregar_Tarea();

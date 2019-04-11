@@ -84,7 +84,7 @@
             this.btnRegresarDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresarDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresarDP.ForeColor = System.Drawing.Color.White;
-            this.btnRegresarDP.Location = new System.Drawing.Point(524, 472);
+            this.btnRegresarDP.Location = new System.Drawing.Point(553, 472);
             this.btnRegresarDP.Name = "btnRegresarDP";
             this.btnRegresarDP.Size = new System.Drawing.Size(90, 36);
             this.btnRegresarDP.TabIndex = 77;
@@ -355,7 +355,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Controls.Add(this.label15);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Location = new System.Drawing.Point(1, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(801, 48);
             this.panel3.TabIndex = 73;
